@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Micheal&#39;s Blog</title>
+  <subtitle>talk is cheap, show me the code</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://ohmyarch.github.io/"/>
+  <updated>2017-01-15T09:02:40.018Z</updated>
+  <id>https://ohmyarch.github.io/</id>
+  
+  <author>
+    <name>Michael Yang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Qt Creator添加配色方案</title>
+    <link href="https://ohmyarch.github.io/2016/01/21/Qt_Creator%E6%B7%BB%E5%8A%A0%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88/"/>
+    <id>https://ohmyarch.github.io/2016/01/21/Qt_Creator添加配色方案/</id>
+    <published>2016-01-21T01:18:01.000Z</published>
+    <updated>2017-01-15T09:02:40.018Z</updated>
+    
+    <content type="html"><![CDATA[<p>Qt Creator自带的几个配色方案都太丑了，如果是作为主力IDE使用，还是换个好看点的配色吧。<br><a id="more"></a></p>
+<h2 id="下载配色方案"><a href="#下载配色方案" class="headerlink" title="下载配色方案"></a>下载配色方案</h2><p>Qt Creator的配色方案相对来说算比较好找的，使用Google或者Github搜索“Qt Creator Color Scheme”或者类似的关键词就能搜到一些。下面列出我感觉还不错的几个供大家参考：</p>
+<h3 id="Qt-Creator-Wombat-Theme"><a href="#Qt-Creator-Wombat-Theme" class="headerlink" title="Qt Creator Wombat Theme"></a><a href="https://github.com/alexpana/qt-creator-wombat-theme" target="_blank" rel="external">Qt Creator Wombat Theme</a></h3><p><img src="images/Qt_Creator添加配色方案/1.png" alt=""></p>
+<h3 id="Dusk-Monokai-and-Twilight-themes-for-Qt-Creator"><a href="#Dusk-Monokai-and-Twilight-themes-for-Qt-Creator" class="headerlink" title="Dusk, Monokai and Twilight themes for Qt Creator"></a><a href="https://github.com/procedural/qtcreator-themes" target="_blank" rel="external">Dusk, Monokai and Twilight themes for Qt Creator</a></h3><p><img src="images/Qt_Creator添加配色方案/2.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/3.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/4.png" alt=""></p>
+<h3 id="Solarized-colors-for-Qt-Creator"><a href="#Solarized-colors-for-Qt-Creator" class="headerlink" title="Solarized colors for Qt Creator"></a><a href="https://github.com/artm/qtcreator-solarized-syntax" target="_blank" rel="external">Solarized colors for Qt Creator</a></h3><p><img src="images/Qt_Creator添加配色方案/5.png" alt=""></p>
+<h3 id="Ildar"><a href="#Ildar" class="headerlink" title="Ildar"></a><a href="https://github.com/gilmanov-ildar/qtcreator-themes" target="_blank" rel="external">Ildar</a></h3><p><img src="images/Qt_Creator添加配色方案/6.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/7.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/8.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/9.png" alt=""></p>
+<h2 id="导入配色方案"><a href="#导入配色方案" class="headerlink" title="导入配色方案"></a>导入配色方案</h2><p>Qt Creator并没有提供直接导入配色方案的方法，而是需要下载.xml格式的配置文件然后拷贝至特定的文件夹。该文件夹的路径是平台相关的：</p>
+<h3 id="Linux-Mac-OS-X"><a href="#Linux-Mac-OS-X" class="headerlink" title="Linux / Mac OS X"></a>Linux / Mac OS X</h3><blockquote>
+<p>~/.config/QtProject/qtcreator/styles</p>
+</blockquote>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><blockquote>
+<p>Users\<user name="">\AppData\Roaming\QtProject\qtcreator\styles</user></p>
+</blockquote>
+<h2 id="选择并使用配色方案"><a href="#选择并使用配色方案" class="headerlink" title="选择并使用配色方案"></a>选择并使用配色方案</h2><p>打开Qt Creator，点击<em>工具-&gt;选项-&gt;文本编辑器-&gt;字体和颜色-&gt;配色方案</em>，然后选择自己喜欢的配色方案并应用就OK了：<br><img src="images/Qt_Creator添加配色方案/10.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Qt Creator自带的几个配色方案都太丑了，如果是作为主力IDE使用，还是换个好看点的配色吧。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IDE" scheme="https://ohmyarch.github.io/categories/IDE/"/>
+    
+      <category term="Qt Creator" scheme="https://ohmyarch.github.io/categories/IDE/Qt-Creator/"/>
+    
+    
+      <category term="Qt Creator" scheme="https://ohmyarch.github.io/tags/Qt-Creator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KDevelop添加帮助文档</title>
+    <link href="https://ohmyarch.github.io/2016/01/20/KDevelop%E6%B7%BB%E5%8A%A0%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    <id>https://ohmyarch.github.io/2016/01/20/KDevelop添加帮助文档/</id>
+    <published>2016-01-20T12:59:55.000Z</published>
+    <updated>2017-01-15T09:10:28.204Z</updated>
+    
+    <content type="html"><![CDATA[<p>KDevelop可以通过插件支持Qt Compressed Help，即.qch格式的帮助文档。<br><a id="more"></a></p>
+<h2 id="下载第三方帮助文档"><a href="#下载第三方帮助文档" class="headerlink" title="下载第三方帮助文档"></a>下载第三方帮助文档</h2><p>进入<a href="https://wiki.qt.io/Qt_Creator_Documentation_Gallery" target="_blank" rel="external">Qt Creator Documentation Gallery</a>下载.qch格式的第三方帮助文档</p>
+<h2 id="确保启用了Qt-Documentation插件"><a href="#确保启用了Qt-Documentation插件" class="headerlink" title="确保启用了Qt Documentation插件"></a>确保启用了Qt Documentation插件</h2><p>KDevelop内置并默认启用Qt Documentation插件。打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，如果没有<em>QtHelp Documentation</em>标签，那就需要先启用Qt Documentation插件：点击<em>插件</em>标签，然后勾选<em>Qt Documentation</em>一项<br><img src="images/KDevelop添加帮助文档/1.png" alt=""></p>
+<h2 id="添加-qch格式的帮助文档"><a href="#添加-qch格式的帮助文档" class="headerlink" title="添加.qch格式的帮助文档"></a>添加.qch格式的帮助文档</h2><p>点击<em>QtHelp Documentation</em>标签，这里有两种添加方式，一种是点击<em>添加</em>按钮，这种方式在添加时可以自定义该文档的名称和图标，添加完成后就可以对名称和图标进行修改。<br><img src="images/KDevelop添加帮助文档/2.png" alt=""></p>
+<p>另一种是点击<em>Choose dir</em>，每次开启KDevelop时同步该目录下的帮助文档，但是这种方法添加的文档不会显示在<em>管理Qt帮助文档</em>列表中，即不能对文档名称和图标进行修改。<br><img src="images/KDevelop添加帮助文档/3.png" alt=""><br><br><br>推荐使用第一种方式。</p>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="images/KDevelop添加帮助文档/4.png" alt=""></p>
+<p><img src="images/KDevelop添加帮助文档/5.png" alt=""><br><br><br>好吧我屏幕的确太小了～</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;KDevelop可以通过插件支持Qt Compressed Help，即.qch格式的帮助文档。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IDE" scheme="https://ohmyarch.github.io/categories/IDE/"/>
+    
+      <category term="KDevelop" scheme="https://ohmyarch.github.io/categories/IDE/KDevelop/"/>
+    
+    
+      <category term="KDevelop" scheme="https://ohmyarch.github.io/tags/KDevelop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qt Creator添加帮助文档</title>
+    <link href="https://ohmyarch.github.io/2016/01/20/Qt_Creator%E6%B7%BB%E5%8A%A0%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
+    <id>https://ohmyarch.github.io/2016/01/20/Qt_Creator添加帮助文档/</id>
+    <published>2016-01-20T02:04:07.000Z</published>
+    <updated>2017-01-15T09:04:42.547Z</updated>
+    
+    <content type="html"><![CDATA[<p>早些时候用Qt Creator作为主力IDE，那时就想过如果Qt Creator里面也能查C++标准库的文档就好了。然而后来转用了KDevelop，查文档也是上<a href="http://en.cppreference.com/w/" target="_blank" rel="external">cppreference</a>。最近又想细致的学习一下Qt Quick，就目前来说，KDevelop对Qt Quick的支持还差很多，所以又用上了Qt Creator，顺便学习了导入帮助文档的方法。<br><a id="more"></a></p>
+<h2 id="下载第三方帮助文档"><a href="#下载第三方帮助文档" class="headerlink" title="下载第三方帮助文档"></a>下载第三方帮助文档</h2><p>进入<a href="https://wiki.qt.io/Qt_Creator_Documentation_Gallery" target="_blank" rel="external">Qt Creator Documentation Gallery</a>下载.qch格式的第三方帮助文档</p>
+<h2 id="导入-qch格式的帮助文档"><a href="#导入-qch格式的帮助文档" class="headerlink" title="导入.qch格式的帮助文档"></a>导入.qch格式的帮助文档</h2><p>打开Qt Creator，点击<em>工具-&gt;选项-&gt;帮助-&gt;文档</em>，点击<em>添加…</em>，然后添加你刚下载的qch文件：<br><img src="images/Qt_Creator添加帮助文档/1.png" alt=""></p>
+<p>这样就添加完成了。<strong>注意：这里的添加只是注册文档，如果删除了原qch文件，这里添加的文档也就没了。</strong></p>
+<p>有些文档支持context help (F1)，比如cppreference的离线文档：<br><img src="images/Qt_Creator添加帮助文档/2.png" alt=""></p>
+<p>按下F1：<br><img src="images/Qt_Creator添加帮助文档/3.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;早些时候用Qt Creator作为主力IDE，那时就想过如果Qt Creator里面也能查C++标准库的文档就好了。然而后来转用了KDevelop，查文档也是上&lt;a href=&quot;http://en.cppreference.com/w/&quot;&gt;cppreference&lt;/a&gt;。最近又想细致的学习一下Qt Quick，就目前来说，KDevelop对Qt Quick的支持还差很多，所以又用上了Qt Creator，顺便学习了导入帮助文档的方法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IDE" scheme="https://ohmyarch.github.io/categories/IDE/"/>
+    
+      <category term="Qt Creator" scheme="https://ohmyarch.github.io/categories/IDE/Qt-Creator/"/>
+    
+    
+      <category term="Qt Creator" scheme="https://ohmyarch.github.io/tags/Qt-Creator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KDevelop使用clang-format格式化源代码</title>
+    <link href="https://ohmyarch.github.io/2016/01/03/KDevelop%E4%BD%BF%E7%94%A8clang-format%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%BA%90%E4%BB%A3%E7%A0%81/"/>
+    <id>https://ohmyarch.github.io/2016/01/03/KDevelop使用clang-format格式化源代码/</id>
+    <published>2016-01-03T07:07:49.000Z</published>
+    <updated>2017-01-15T09:00:33.488Z</updated>
+    
+    <content type="html"><![CDATA[<p>治好你的强迫症<br><a id="more"></a></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">clang-format -version</div></pre></td></tr></table></figure></p>
+<p>如果输出结果显示clang-format命令不可用，就需要先安装相应的软件包。</p>
+<p>对于Arch Linux:<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S clang</div></pre></td></tr></table></figure></p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，选择<em>Source Formatter</em>标签，选择格式化方式为<em>Custom Script Formatter</em>，再点击<em>新建</em>以创建一个新的格式化样式：<br><img src="images/KDevelop使用clang-foramt格式化源代码/1.png" alt=""></p>
+<p>给新建的格式化样式起个名字，比如“clang_format_source”，点击<em>编辑…</em>：<br><img src="images/KDevelop使用clang-foramt格式化源代码/2.png" alt=""></p>
+<p>然后输入合适的clang-format命令，右边的预览框可以实时预览命令的执行结果，很方便。这里我用的命令是：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">clang-format -style=<span class="string">"&#123;BasedOnStyle: llvm, IndentWidth: 4&#125;"</span> -i <span class="variable">$TMPFILE</span></div></pre></td></tr></table></figure></p>
+<p><strong>注意：别忘了对C和C++都设置为使用刚刚创建的格式化样式，因为*.h会被视为C语言头文件。如果只有C++设置为新的格式化样式，那么头文件将不会按照新样式进行格式化。</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;治好你的强迫症&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IDE" scheme="https://ohmyarch.github.io/categories/IDE/"/>
+    
+      <category term="KDevelop" scheme="https://ohmyarch.github.io/categories/IDE/KDevelop/"/>
+    
+    
+      <category term="C++" scheme="https://ohmyarch.github.io/tags/C/"/>
+    
+      <category term="KDevelop" scheme="https://ohmyarch.github.io/tags/KDevelop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网易云音乐歌单——分享</title>
+    <link href="https://ohmyarch.github.io/2015/08/05/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95%E2%80%94%E2%80%94%E5%88%86%E4%BA%AB/"/>
+    <id>https://ohmyarch.github.io/2015/08/05/网易云音乐歌单——分享/</id>
+    <published>2015-08-05T13:27:09.000Z</published>
+    <updated>2015-12-30T13:24:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>放松一下~<br><a id="more"></a></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=121202753&auto=0&height=430"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;放松一下~&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Music" scheme="https://ohmyarch.github.io/categories/Music/"/>
+    
+    
+      <category term="Music" scheme="https://ohmyarch.github.io/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo添加RSS和Sitemap</title>
+    <link href="https://ohmyarch.github.io/2015/07/01/Hexo%E6%B7%BB%E5%8A%A0RSS%E5%92%8CSitemap/"/>
+    <id>https://ohmyarch.github.io/2015/07/01/Hexo添加RSS和Sitemap/</id>
+    <published>2015-07-01T08:15:23.000Z</published>
+    <updated>2016-01-22T12:29:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="添加RSS"><a href="#添加RSS" class="headerlink" title="添加RSS"></a>添加RSS</h2><h3 id="安装hexo-generator-feed插件"><a href="#安装hexo-generator-feed插件" class="headerlink" title="安装hexo-generator-feed插件"></a>安装hexo-generator-feed插件</h3><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-feed --save</div></pre></td></tr></table></figure>
+<h3 id="修改全局配置"><a href="#修改全局配置" class="headerlink" title="修改全局配置"></a>修改全局配置</h3><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">plugins:</span></div><div class="line"><span class="bullet">-</span> hexo-generator-feed</div></pre></td></tr></table></figure>
+<h2 id="添加Sitemap"><a href="#添加Sitemap" class="headerlink" title="添加Sitemap"></a>添加Sitemap</h2><h3 id="安装hexo-generator-sitemap插件"><a href="#安装hexo-generator-sitemap插件" class="headerlink" title="安装hexo-generator-sitemap插件"></a>安装hexo-generator-sitemap插件</h3><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-sitemap --save</div></pre></td></tr></table></figure>
+<h3 id="修改全局配置-1"><a href="#修改全局配置-1" class="headerlink" title="修改全局配置"></a>修改全局配置</h3><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">plugins:</span></div><div class="line"><span class="bullet">-</span> hexo-generator-sitemap</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;添加RSS&quot;&gt;&lt;a href=&quot;#添加RSS&quot; class=&quot;headerlink&quot; title=&quot;添加RSS&quot;&gt;&lt;/a&gt;添加RSS&lt;/h2&gt;&lt;h3 id=&quot;安装hexo-generator-feed插件&quot;&gt;&lt;a href=&quot;#安装hexo-generator-f
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下搭建Qt for Android开发环境</title>
+    <link href="https://ohmyarch.github.io/2015/06/29/Linux%E4%B8%8B%E6%90%AD%E5%BB%BAQt_for_Android%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>https://ohmyarch.github.io/2015/06/29/Linux下搭建Qt_for_Android开发环境/</id>
+    <published>2015-06-29T08:30:56.000Z</published>
+    <updated>2017-01-15T09:13:09.222Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。<br><a id="more"></a></p>
+<h2 id="安装Android-SDK"><a href="#安装Android-SDK" class="headerlink" title="安装Android SDK"></a>安装Android SDK</h2><p>进入<a href="http://developer.android.com/sdk/index.html#Other" target="_blank" rel="external">这个链接</a>，选择Linux版的Android SDK进行下载。</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/1.png" alt=""></p>
+<p>如果下载的网速不够理想，这里有个秒下的方法，就是使用百度云的离线下载工具。百度云离线下载的使用方法这里不作介绍。</p>
+<p>下载完成之后解压，将解压后的文件夹拷贝到一个合适的路径，我这里是/home/michael/Code/android/android-sdk-linux。打开终端模拟器，切换至该路径，然后执行<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> tools</div><div class="line">./android update sdk</div></pre></td></tr></table></figure></p>
+<p>这时会弹出Android SDK Manager的界面，由于这里所有包的下载链接都是来自Google的，自然也是被和谐的，使用全局代理例如VPN可以解决这个问题，我这里来说一下不使用VPN的解决方案。</p>
+<p>点击<em>Tools-&gt;Options</em>，按照下图进行设置然后关闭就可以了：<br><img src="images/Linux下搭建Qt_for_Android开发环境/2.png" alt=""></p>
+<p>下一步是安装需要的包，在所有列出的这些包中，必须安装的有Android SDK Platform-tools和Android SDK Build-tools：<br><img src="images/Linux下搭建Qt_for_Android开发环境/3.png" alt=""></p>
+<p>另外，至少选择一个API level的SDK Platform进行安装，如果后面使用AVD调试Android程序，还需要安装相应的系统镜像。这里我只安装了Android 4.0.3(API15)：<br><img src="images/Linux下搭建Qt_for_Android开发环境/4.png" alt=""></p>
+<p>选择完毕后，点击<em>Install packages</em>，耐心等待安装结束。</p>
+<h2 id="安装Android-NDK"><a href="#安装Android-NDK" class="headerlink" title="安装Android NDK"></a>安装Android NDK</h2><p>进入<a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">这个链接</a>，选择Linux版的Android NDK进行下载。</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/5.png" alt=""></p>
+<p>如果下载的网速不够理想，请使用百度云的离线下载工具。</p>
+<p>下载下来的文件是一个自解压程序，我这里的路径是/home/michael/Downloads/android-ndk-r10e-linux-x86_64.bin，切换至该文件所在目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod a+x android-ndk-r10e-linux-x86_64.bin</div><div class="line">./android-ndk-r10e-linux-x86_64.bin</div></pre></td></tr></table></figure></p>
+<p>这时程序内的文件已被解压至名为android-ndk-r10e的文件夹</p>
+<h2 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h2><p>安装OpenJDK（以Arch Linux为例）：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S jdk7-openjdk</div></pre></td></tr></table></figure></p>
+<h2 id="安装Qt-for-Android"><a href="#安装Qt-for-Android" class="headerlink" title="安装Qt for Android"></a>安装Qt for Android</h2><p>进入<a href="https://www.qt.io/zh-hans/download-open-source/#section-2" target="_blank" rel="external">这个链接</a>，选择Linux版的Qt for Android进行下载。</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/6.png" alt=""></p>
+<p>切换至下载目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod +x qt-opensource-linux-x64-android-5.4.2.run</div><div class="line">./qt-opensource-linux-x64-android-5.4.2.run</div></pre></td></tr></table></figure></p>
+<p>这时会弹出Qt for Android的安装界面，由于是图形化的安装程序，具体步骤不作介绍。</p>
+<h2 id="配置Qt-Creator"><a href="#配置Qt-Creator" class="headerlink" title="配置Qt Creator"></a>配置Qt Creator</h2><p>首先运行Qt Creator。切换至Qt for Android的安装目录，我这里是/home/michael/Code/android/Qt5.4.2_for_Android，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> Tools/QtCreator/bin</div><div class="line">./qtcreator.sh</div></pre></td></tr></table></figure></p>
+<p>点击<em>工具-&gt;选项…</em>，选择Android标签，按下图配置，然后点击确定：<br><img src="images/Linux下搭建Qt_for_Android开发环境/7.png" alt=""></p>
+<p>点击<em>工具-&gt;选项-&gt;调试器</em>，去勾选<em>Warn when debugging “Release” builds</em>一项：<br><img src="images/Linux下搭建Qt_for_Android开发环境/12.png" alt=""></p>
+<h2 id="新建测试工程"><a href="#新建测试工程" class="headerlink" title="新建测试工程"></a>新建测试工程</h2><p>在Qt Creator中点击<em>文件-&gt;新建文件或项目…</em>，选择<em>Qt Quick Application</em>模板，在<em>Kit Selection</em>这一步按下图选择，其他都按默认：<br><img src="images/Linux下搭建Qt_for_Android开发环境/8.png" alt=""></p>
+<h2 id="在Android设备上运行"><a href="#在Android设备上运行" class="headerlink" title="在Android设备上运行"></a>在Android设备上运行</h2><p>构建该项目，第一次构建时会下载Gradle，稍慢。然后接入一台开启了USB调试的Android设备，点击运行。这时会弹出对话框让你选择Android设备，可以是真机，也可以是AVD，这里选择我的Android手机，如下图：<br><img src="images/Linux下搭建Qt_for_Android开发环境/9.png" alt=""><br>运行结果：</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/10.jpg" alt=""><br><img src="images/Linux下搭建Qt_for_Android开发环境/11.jpg" alt=""></p>
+<p>参考：<br><a href="http://doc.qt.io/qt-5/androidgs.html" target="_blank" rel="external">http://doc.qt.io/qt-5/androidgs.html</a><br><a href="http://www.kdab.com/qt-on-android-episode-2/" target="_blank" rel="external">http://www.kdab.com/qt-on-android-episode-2/</a><br><a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">http://developer.android.com/ndk/downloads/index.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Qt" scheme="https://ohmyarch.github.io/categories/Qt/"/>
+    
+      <category term="Qt Quick" scheme="https://ohmyarch.github.io/categories/Qt/Qt-Quick/"/>
+    
+    
+      <category term="Linux" scheme="https://ohmyarch.github.io/tags/Linux/"/>
+    
+      <category term="Android" scheme="https://ohmyarch.github.io/tags/Android/"/>
+    
+      <category term="Qt" scheme="https://ohmyarch.github.io/tags/Qt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo添加Favicon</title>
+    <link href="https://ohmyarch.github.io/2014/12/24/Hexo%E6%B7%BB%E5%8A%A0Favicon/"/>
+    <id>https://ohmyarch.github.io/2014/12/24/Hexo添加Favicon/</id>
+    <published>2014-12-24T03:00:53.000Z</published>
+    <updated>2015-12-30T13:24:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Favicon是Favorite icon的简称，可以表示快捷方式图标，网站图标，标签页图标或者书签图标，尺寸通常为16×16 像素。有些主题自带了默认的Favicon，比如<a href="https://github.com/A-limon/pacman" target="_blank" rel="external">Pacman</a>。<br><a id="more"></a><br>如果对主题自带的Favicon不满意或者主题没有自带Favicon，打开主题的配置文件，定位到favicon节点，将favicon的值指定为一个相对路径或者图片链接。比如我想借用一下Pacman主题的Favicon，修改后的favicon节点：<br><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">favicon:</span> https://raw.githubusercontent.com/A-limon/pacman/master/source/img/favicon.ico</div></pre></td></tr></table></figure></p>
+<p>参考：<br><a href="http://en.wikipedia.org/wiki/Favicon" target="_blank" rel="external">http://en.wikipedia.org/wiki/Favicon</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Favicon是Favorite icon的简称，可以表示快捷方式图标，网站图标，标签页图标或者书签图标，尺寸通常为16×16 像素。有些主题自带了默认的Favicon，比如&lt;a href=&quot;https://github.com/A-limon/pacman&quot;&gt;Pacman&lt;/a&gt;。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo主页显示摘要</title>
+    <link href="https://ohmyarch.github.io/2014/12/24/Hexo%E4%B8%BB%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%91%98%E8%A6%81/"/>
+    <id>https://ohmyarch.github.io/2014/12/24/Hexo主页显示摘要/</id>
+    <published>2014-12-24T01:54:29.000Z</published>
+    <updated>2015-12-30T13:22:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>我现在使用的Landscape主题默认在主页显示文章的所有内容，这对读者有点不友好，而该主题在主页仅显示标题又很不美观，看到Landscape主题的<a href="http://hexo.io/hexo-theme-landscape/" target="_blank" rel="external">Demo页面</a>可以只显示文章摘要，阅读剩下的部分需要点击“Read More”进入博文并自动跳过摘要部分，这正是我想要的。<br><a id="more"></a></p>
+<p>要实现摘要，只需要在文章开头写好摘要后，另起一行键入&lt;!&#8722;&#8722; more &#8722;&#8722;&gt;即可，就像这样：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">这是摘要</div><div class="line">&lt;!-- more --&gt;</div><div class="line">这是正文</div></pre></td></tr></table></figure></p>
+<p>如果不想显示“Read More”而显示别的文字比如“阅读更多”，打开主题的配置文件，定位到如下位置：<br><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">excerpt_link:</span> Read More</div></pre></td></tr></table></figure></p>
+<p>改为：<br><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">excerpt_link:</span> 阅读更多</div></pre></td></tr></table></figure></p>
+<p>参考：<br><a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">http://hexo.io/docs/writing.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我现在使用的Landscape主题默认在主页显示文章的所有内容，这对读者有点不友好，而该主题在主页仅显示标题又很不美观，看到Landscape主题的&lt;a href=&quot;http://hexo.io/hexo-theme-landscape/&quot;&gt;Demo页面&lt;/a&gt;可以只显示文章摘要，阅读剩下的部分需要点击“Read More”进入博文并自动跳过摘要部分，这正是我想要的。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo新建页面类别</title>
+    <link href="https://ohmyarch.github.io/2014/12/23/Hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E7%B1%BB%E5%88%AB/"/>
+    <id>https://ohmyarch.github.io/2014/12/23/Hexo新建页面类别/</id>
+    <published>2014-12-23T04:51:29.000Z</published>
+    <updated>2017-01-15T08:59:33.679Z</updated>
+    
+    <content type="html"><![CDATA[<p>一些Hexo主题的Demo页面有多种页面类别，比如下面这个：</p>
+<p><img src="images/Hexo新建页面类别/1.png" alt=""></p>
+<p>可以看到<a href="http://hexo.io/hexo-theme-landscape/" target="_blank" rel="external">这个页面</a>有4个页面类别，分别是：Home、Archives、Page和Source。<br><a id="more"></a></p>
+<p>要新建一个页面类别非常简单，例如我想新建一个名为“Github”的页面类别，首先打开终端模拟器，切换至Hexo目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="string">"Github"</span></div></pre></td></tr></table></figure></p>
+<p>我的Hexo目录是/home/michael/Documents/github_blog，该命令会创建/home/michael/Documents/github_blog/source/Github目录并在该目录下生成一个index.md的示例文件。</p>
+<p>另外，还需要修改一下主题的配置文件，我这里的路径是：/home/michael/Documents/github_blog/themes/landscape/_config.yml。打开配置文件后定位至menu节点，内容是这样的：<br><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span></div><div class="line"><span class="attr">  Home:</span> /</div><div class="line"><span class="attr">  Archives:</span> /archives</div></pre></td></tr></table></figure></p>
+<p>现在我决定在Archives类别的后面插入Github这个类别。<br>修改后的menu节点：<br><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span></div><div class="line"><span class="attr">  Home:</span> /</div><div class="line"><span class="attr">  Archives:</span> /archives</div><div class="line"><span class="attr">  Github:</span> /Github</div></pre></td></tr></table></figure></p>
+<p>好了，一个名为“Github”的新的页面类型创建完成。</p>
+<p>等等，如果我并不想新建一个页面类别，仅仅想添加一个类别标签，当我点击它时，会跳转到另一个链接。这能做到吗？<br>当然。比如要实现点击“Github”这个标签时，跳转到我的Github主页，直接修改主题配置文件的menu节点为：<br><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">menu:</span></div><div class="line"><span class="attr">  Home:</span> /</div><div class="line"><span class="attr">  Archives:</span> /archives</div><div class="line"><span class="attr">  Github:</span> https://github.com/ohmyarch</div></pre></td></tr></table></figure></p>
+<p>参考：<br><a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">http://hexo.io/docs/writing.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一些Hexo主题的Demo页面有多种页面类别，比如下面这个：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/Hexo新建页面类别/1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;可以看到&lt;a href=&quot;http://hexo.io/hexo-theme-landscape/&quot;&gt;这个页面&lt;/a&gt;有4个页面类别，分别是：Home、Archives、Page和Source。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://ohmyarch.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>openSUSE安装Wine QQ国际版</title>
+    <link href="https://ohmyarch.github.io/2014/12/22/openSUSE%E5%AE%89%E8%A3%85Wine_QQ/"/>
+    <id>https://ohmyarch.github.io/2014/12/22/openSUSE安装Wine_QQ/</id>
+    <published>2014-12-22T11:47:13.000Z</published>
+    <updated>2016-01-22T12:27:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>QQ作为国内最流行的即时通信软件，可以说是装机必备。在openSUSE系统上安装QQ是一件很头疼的事，09年的官方版本无法登录，网上下载安装的各种Wine QQ不是无法登录就是一打开就崩溃，最后在<a href="http://www.ubuntukylin.com/" target="_blank" rel="external">Ubuntu Kylin官网</a>上找到了可在openSUSE系统正常使用的Wine QQ。</p>
+<p>下载安装过程如下：<br><a id="more"></a></p>
+<h2 id="下载Wine-QQ"><a href="#下载Wine-QQ" class="headerlink" title="下载Wine QQ"></a>下载Wine QQ</h2><p>进入Ubuntu Kylin的官网后点击进入应用页面，在侧边栏选择“第三方应用”后再选择Wine QQ，点击下载会跳转到百度云网盘的下载页面。</p>
+<h2 id="将下载的压缩包解压"><a href="#将下载的压缩包解压" class="headerlink" title="将下载的压缩包解压"></a>将下载的压缩包解压</h2><p>打开终端模拟器,切换至下载目录，解压文件后切换至解压目录并列出所有文件：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">unzip wine-qqintl.zip</div><div class="line"><span class="built_in">cd</span> wine-qqintl</div><div class="line">ls</div></pre></td></tr></table></figure></p>
+<p>我解压后得到了3个文件：fonts-wqy-microhei_0.2.0-beta-2_all.deb、microhei_0.2.0-beta-2_all.deb和wine-qqintl_0.1.3-2_i386.deb。</p>
+<h2 id="将deb软件包转为rpm软件包"><a href="#将deb软件包转为rpm软件包" class="headerlink" title="将deb软件包转为rpm软件包"></a>将deb软件包转为rpm软件包</h2><p>alien是一个可以在deb软件包和rpm软件包之间转换的工具。如果没有安装alien，先安装它：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo zypper install alien</div></pre></td></tr></table></figure></p>
+<p>接下来，分别将3个deb软件包转为rpm软件包并查看生成了哪些rpm软件包：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo alien -r fonts-wqy-microhei_0.2.0-beta-2_all.deb</div><div class="line">sudo alien -r microhei_0.2.0-beta-2_all.deb</div><div class="line">sudo alien -r wine-qqintl_0.1.3-2_i386.deb</div><div class="line">ls</div></pre></td></tr></table></figure></p>
+<p>我这里生成的rpm软件包为：fonts-wqy-microhei-0.2.0_beta-3.noarch.rpm、ttf-wqy-microhei-0.2.0_beta-3.noarch.rpm和wine-qqintl-0.1.3-3.i386.rpm。</p>
+<h2 id="安装Wine-QQ"><a href="#安装Wine-QQ" class="headerlink" title="安装Wine QQ"></a>安装Wine QQ</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo rpm -ivh fonts-wqy-microhei-0.2.0_beta-3.noarch.rpm</div><div class="line">sudo rpm -ivh ttf-wqy-microhei-0.2.0_beta-3.noarch.rpm</div><div class="line">sudo rpm -ivh wine-qqintl-0.1.3-3.i386.rpm</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;QQ作为国内最流行的即时通信软件，可以说是装机必备。在openSUSE系统上安装QQ是一件很头疼的事，09年的官方版本无法登录，网上下载安装的各种Wine QQ不是无法登录就是一打开就崩溃，最后在&lt;a href=&quot;http://www.ubuntukylin.com/&quot;&gt;Ubuntu Kylin官网&lt;/a&gt;上找到了可在openSUSE系统正常使用的Wine QQ。&lt;/p&gt;
+&lt;p&gt;下载安装过程如下：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://ohmyarch.github.io/categories/Linux/"/>
+    
+      <category term="openSUSE" scheme="https://ohmyarch.github.io/categories/Linux/openSUSE/"/>
+    
+    
+      <category term="Linux" scheme="https://ohmyarch.github.io/tags/Linux/"/>
+    
+      <category term="openSUSE" scheme="https://ohmyarch.github.io/tags/openSUSE/"/>
+    
+      <category term="Wine" scheme="https://ohmyarch.github.io/tags/Wine/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GRUB2修复</title>
+    <link href="https://ohmyarch.github.io/2014/12/19/GRUB2%E4%BF%AE%E5%A4%8D/"/>
+    <id>https://ohmyarch.github.io/2014/12/19/GRUB2修复/</id>
+    <published>2014-12-19T10:10:08.000Z</published>
+    <updated>2016-01-22T12:29:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>GRUB故障算是Linux的常见问题了。该故障往往表现为“开不了机”，即电脑启动后无法进入系统，而是进入GRUB的rescue mode，处于该模式时，只有少数的GRUB命令是可用的：</p>
+<ul>
+<li>insmod 加载指定的动态GRUB模块</li>
+<li>ls 列出设备或文件。如果没有指定参数，列出所有GRUB能够识别的设备</li>
+<li>set 设置环境变量的值。如果没有指定参数，打印所有环境变量的值</li>
+<li>unset 使给定的环境变量的值复原</li>
+</ul>
+<p>接下来我们就使用这几个命令来修复GRUB。<br><a id="more"></a></p>
+<h2 id="列出所有设备"><a href="#列出所有设备" class="headerlink" title="列出所有设备"></a>列出所有设备</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ls</div></pre></td></tr></table></figure>
+<p>你会看到ls列出了一些类似(hd0,msdos1)、(hd0,msdos2)这样的的设备名称</p>
+<h2 id="在所有设备中寻找根目录挂载的设备"><a href="#在所有设备中寻找根目录挂载的设备" class="headerlink" title="在所有设备中寻找根目录挂载的设备"></a>在所有设备中寻找根目录挂载的设备</h2><p>我们需要试着列出每一个设备的内容，直到找到根目录挂载的设备为止。比如我们可以这样来查看(hd0,msdos1)的内容</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ls (hd0,msdos1)</div></pre></td></tr></table></figure>
+<p>假定这里找到的根目录挂载的设备为(hd0,msdos1)</p>
+<p><strong>注意：如果单独挂载了/boot，则需要用上面的方法寻找/boot挂载的设备</strong></p>
+<h2 id="设置prefix环境变量的值，该值代表的目录包含grub-cfg"><a href="#设置prefix环境变量的值，该值代表的目录包含grub-cfg" class="headerlink" title="设置prefix环境变量的值，该值代表的目录包含grub.cfg"></a>设置prefix环境变量的值，该值代表的目录包含grub.cfg</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">set</span> prefix=(hd0,msdos1)/boot/grub2</div></pre></td></tr></table></figure>
+<h2 id="加载normal模块"><a href="#加载normal模块" class="headerlink" title="加载normal模块"></a>加载normal模块</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">insmod normal</div></pre></td></tr></table></figure>
+<h2 id="进入normal模式，显示GRUB引导菜单"><a href="#进入normal模式，显示GRUB引导菜单" class="headerlink" title="进入normal模式，显示GRUB引导菜单"></a>进入normal模式，显示GRUB引导菜单</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">normal</div></pre></td></tr></table></figure>
+<h2 id="进入Linux系统，启动终端模拟器"><a href="#进入Linux系统，启动终端模拟器" class="headerlink" title="进入Linux系统，启动终端模拟器"></a>进入Linux系统，启动终端模拟器</h2><h2 id="修复GRUB"><a href="#修复GRUB" class="headerlink" title="修复GRUB"></a>修复GRUB</h2><p>openSUSE系统：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo grub2-mkconfig -o /boot/grub2/grub</div><div class="line">sudo grub2-install /dev/sda</div></pre></td></tr></table></figure></p>
+<p>Ubuntu系统：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo update-grub</div><div class="line">sudo grub-install /dev/sda</div></pre></td></tr></table></figure></p>
+<p>参考：<br><a href="http://www.gnu.org/software/grub/manual/html_node/index.html" target="_blank" rel="external">http://www.gnu.org/software/grub/manual/html_node/index.html</a><br><a href="http://www.gnu.org/software/grub/manual/html_node/Commands.html" target="_blank" rel="external">http://www.gnu.org/software/grub/manual/html_node/Commands.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;GRUB故障算是Linux的常见问题了。该故障往往表现为“开不了机”，即电脑启动后无法进入系统，而是进入GRUB的rescue mode，处于该模式时，只有少数的GRUB命令是可用的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;insmod 加载指定的动态GRUB模块&lt;/li&gt;
+&lt;li&gt;ls 列出设备或文件。如果没有指定参数，列出所有GRUB能够识别的设备&lt;/li&gt;
+&lt;li&gt;set 设置环境变量的值。如果没有指定参数，打印所有环境变量的值&lt;/li&gt;
+&lt;li&gt;unset 使给定的环境变量的值复原&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下来我们就使用这几个命令来修复GRUB。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://ohmyarch.github.io/categories/Linux/"/>
+    
+    
+      <category term="GRUB" scheme="https://ohmyarch.github.io/tags/GRUB/"/>
+    
+      <category term="Linux" scheme="https://ohmyarch.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+</feed>

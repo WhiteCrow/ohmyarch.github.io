@@ -1,0 +1,600 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Qt Creator添加配色方案 | Micheal&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Michael Yang">
+    
+
+    
+    <meta name="description" content="Qt Creator自带的几个配色方案都太丑了，如果是作为主力IDE使用，还是换个好看点的配色吧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Qt Creator添加配色方案">
+<meta property="og:url" content="https://ohmyarch.github.io/2016/01/21/Qt_Creator添加配色方案/index.html">
+<meta property="og:site_name" content="Micheal's Blog">
+<meta property="og:description" content="Qt Creator自带的几个配色方案都太丑了，如果是作为主力IDE使用，还是换个好看点的配色吧。">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/1.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/2.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/3.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/4.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/5.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/6.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/7.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/8.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/9.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/10.png">
+<meta property="og:updated_time" content="2017-01-15T09:02:40.018Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Qt Creator添加配色方案">
+<meta name="twitter:description" content="Qt Creator自带的几个配色方案都太丑了，如果是作为主力IDE使用，还是换个好看点的配色吧。">
+<meta name="twitter:image" content="https://ohmyarch.github.io/images/Qt_Creator添加配色方案/1.png">
+<meta name="twitter:creator" content="@ohmyarch">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Micheal&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.svg">
+    
+    
+    <link rel="apple-touch-icon" href="/img/archlinux.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/archlinux.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Micheal&#39;s Blog" title="Micheal&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Micheal&#39;s Blog">Micheal&#39;s Blog</a></h1>
+				<h2 class="blog-motto">talk is cheap, show me the code</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/01/21/Qt_Creator添加配色方案/" title="Qt Creator添加配色方案" itemprop="url">Qt Creator添加配色方案</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Michael Yang" target="_blank" itemprop="author">Michael Yang</a>
+		
+  <p class="article-time">
+    <time datetime="2016-01-21T01:18:01.000Z" itemprop="datePublished"> 发表于 2016-01-21</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载配色方案"><span class="toc-number">1.</span> <span class="toc-text">下载配色方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Qt-Creator-Wombat-Theme"><span class="toc-number">1.1.</span> <span class="toc-text">Qt Creator Wombat Theme</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dusk-Monokai-and-Twilight-themes-for-Qt-Creator"><span class="toc-number">1.2.</span> <span class="toc-text">Dusk, Monokai and Twilight themes for Qt Creator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Solarized-colors-for-Qt-Creator"><span class="toc-number">1.3.</span> <span class="toc-text">Solarized colors for Qt Creator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ildar"><span class="toc-number">1.4.</span> <span class="toc-text">Ildar</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入配色方案"><span class="toc-number">2.</span> <span class="toc-text">导入配色方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux-Mac-OS-X"><span class="toc-number">2.1.</span> <span class="toc-text">Linux / Mac OS X</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-number">2.2.</span> <span class="toc-text">Windows</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#选择并使用配色方案"><span class="toc-number">3.</span> <span class="toc-text">选择并使用配色方案</span></a></li></ol>
+		
+		</div>
+		
+		<p>Qt Creator自带的几个配色方案都太丑了，如果是作为主力IDE使用，还是换个好看点的配色吧。<br><a id="more"></a></p>
+<h2 id="下载配色方案"><a href="#下载配色方案" class="headerlink" title="下载配色方案"></a>下载配色方案</h2><p>Qt Creator的配色方案相对来说算比较好找的，使用Google或者Github搜索“Qt Creator Color Scheme”或者类似的关键词就能搜到一些。下面列出我感觉还不错的几个供大家参考：</p>
+<h3 id="Qt-Creator-Wombat-Theme"><a href="#Qt-Creator-Wombat-Theme" class="headerlink" title="Qt Creator Wombat Theme"></a><a href="https://github.com/alexpana/qt-creator-wombat-theme" target="_blank" rel="external">Qt Creator Wombat Theme</a></h3><p><img src="images/Qt_Creator添加配色方案/1.png" alt=""></p>
+<h3 id="Dusk-Monokai-and-Twilight-themes-for-Qt-Creator"><a href="#Dusk-Monokai-and-Twilight-themes-for-Qt-Creator" class="headerlink" title="Dusk, Monokai and Twilight themes for Qt Creator"></a><a href="https://github.com/procedural/qtcreator-themes" target="_blank" rel="external">Dusk, Monokai and Twilight themes for Qt Creator</a></h3><p><img src="images/Qt_Creator添加配色方案/2.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/3.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/4.png" alt=""></p>
+<h3 id="Solarized-colors-for-Qt-Creator"><a href="#Solarized-colors-for-Qt-Creator" class="headerlink" title="Solarized colors for Qt Creator"></a><a href="https://github.com/artm/qtcreator-solarized-syntax" target="_blank" rel="external">Solarized colors for Qt Creator</a></h3><p><img src="images/Qt_Creator添加配色方案/5.png" alt=""></p>
+<h3 id="Ildar"><a href="#Ildar" class="headerlink" title="Ildar"></a><a href="https://github.com/gilmanov-ildar/qtcreator-themes" target="_blank" rel="external">Ildar</a></h3><p><img src="images/Qt_Creator添加配色方案/6.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/7.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/8.png" alt=""></p>
+<p><img src="images/Qt_Creator添加配色方案/9.png" alt=""></p>
+<h2 id="导入配色方案"><a href="#导入配色方案" class="headerlink" title="导入配色方案"></a>导入配色方案</h2><p>Qt Creator并没有提供直接导入配色方案的方法，而是需要下载.xml格式的配置文件然后拷贝至特定的文件夹。该文件夹的路径是平台相关的：</p>
+<h3 id="Linux-Mac-OS-X"><a href="#Linux-Mac-OS-X" class="headerlink" title="Linux / Mac OS X"></a>Linux / Mac OS X</h3><blockquote>
+<p>~/.config/QtProject/qtcreator/styles</p>
+</blockquote>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><blockquote>
+<p>Users\<user name="">\AppData\Roaming\QtProject\qtcreator\styles</user></p>
+</blockquote>
+<h2 id="选择并使用配色方案"><a href="#选择并使用配色方案" class="headerlink" title="选择并使用配色方案"></a>选择并使用配色方案</h2><p>打开Qt Creator，点击<em>工具-&gt;选项-&gt;文本编辑器-&gt;字体和颜色-&gt;配色方案</em>，然后选择自己喜欢的配色方案并应用就OK了：<br><img src="images/Qt_Creator添加配色方案/10.png" alt=""></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/IDE/">IDE</a>►<a class="article-category-link" href="/categories/IDE/Qt-Creator/">Qt Creator</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Qt-Creator/">Qt Creator</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="https://ohmyarch.github.io/2016/01/21/Qt_Creator添加配色方案/" data-title="Qt Creator添加配色方案 | Micheal&#39;s Blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/01/20/KDevelop添加帮助文档/"  title="KDevelop添加帮助文档">
+ <strong>下一篇：</strong><br/> 
+ <span>KDevelop添加帮助文档
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载配色方案"><span class="toc-number">1.</span> <span class="toc-text">下载配色方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Qt-Creator-Wombat-Theme"><span class="toc-number">1.1.</span> <span class="toc-text">Qt Creator Wombat Theme</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dusk-Monokai-and-Twilight-themes-for-Qt-Creator"><span class="toc-number">1.2.</span> <span class="toc-text">Dusk, Monokai and Twilight themes for Qt Creator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Solarized-colors-for-Qt-Creator"><span class="toc-number">1.3.</span> <span class="toc-text">Solarized colors for Qt Creator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ildar"><span class="toc-number">1.4.</span> <span class="toc-text">Ildar</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入配色方案"><span class="toc-number">2.</span> <span class="toc-text">导入配色方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux-Mac-OS-X"><span class="toc-number">2.1.</span> <span class="toc-text">Linux / Mac OS X</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-number">2.2.</span> <span class="toc-text">Windows</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#选择并使用配色方案"><span class="toc-number">3.</span> <span class="toc-text">选择并使用配色方案</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="ohmyarch" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/IDE/" title="IDE">IDE<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/IDE/KDevelop/" title="KDevelop">KDevelop<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Music/" title="Music">Music<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Qt/" title="Qt">Qt<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/IDE/Qt-Creator/" title="Qt Creator">Qt Creator<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Qt/Qt-Quick/" title="Qt Quick">Qt Quick<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Linux/openSUSE/" title="openSUSE">openSUSE<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Linux/" title="Linux">Linux<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/KDevelop/" title="KDevelop">KDevelop<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Qt-Creator/" title="Qt Creator">Qt Creator<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Android/" title="Android">Android<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/C/" title="C++">C++<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Qt/" title="Qt">Qt<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/GRUB/" title="GRUB">GRUB<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/openSUSE/" title="openSUSE">openSUSE<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Wine/" title="Wine">Wine<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Music/" title="Music">Music<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/GRUB/" style="font-size: 10px;">GRUB</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/KDevelop/" style="font-size: 13.33px;">KDevelop</a> <a href="/tags/Linux/" style="font-size: 16.67px;">Linux</a> <a href="/tags/Music/" style="font-size: 10px;">Music</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/Qt-Creator/" style="font-size: 13.33px;">Qt Creator</a> <a href="/tags/Wine/" style="font-size: 10px;">Wine</a> <a href="/tags/openSUSE/" style="font-size: 10px;">openSUSE</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://avplayer.org" target="_blank" title="avplayer社区">avplayer社区</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://riverflows.in" target="_blank" title="K&#39;s Blog">K&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello, I&#39;m Michael Yang. <br/>
+			This is my blog, believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/ohmyarch" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		<a href="https://twitter.com/ohmyarch" target="_blank" class="icon-twitter" title="twitter"></a>
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:ohmyarchlinux@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+				<div class="cc-license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+            <img src="/img/cc-by-nc-sa.svg" alt="Creative Commons" />
+          </a>
+        </div>
+    
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="Michael Yang">Michael Yang</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'ohmyarch';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

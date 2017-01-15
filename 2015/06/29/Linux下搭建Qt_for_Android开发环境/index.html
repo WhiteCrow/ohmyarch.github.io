@@ -1,0 +1,618 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Linux下搭建Qt for Android开发环境 | Micheal&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Michael Yang">
+    
+
+    
+    <meta name="description" content="使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux下搭建Qt for Android开发环境">
+<meta property="og:url" content="https://ohmyarch.github.io/2015/06/29/Linux下搭建Qt_for_Android开发环境/index.html">
+<meta property="og:site_name" content="Micheal's Blog">
+<meta property="og:description" content="使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/1.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/2.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/3.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/4.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/5.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/6.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/7.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/12.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/8.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/9.png">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/10.jpg">
+<meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/11.jpg">
+<meta property="og:updated_time" content="2017-01-15T09:13:09.222Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux下搭建Qt for Android开发环境">
+<meta name="twitter:description" content="使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。">
+<meta name="twitter:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/1.png">
+<meta name="twitter:creator" content="@ohmyarch">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Micheal&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.svg">
+    
+    
+    <link rel="apple-touch-icon" href="/img/archlinux.png">
+    <link rel="apple-touch-icon-precomposed" href="/img/archlinux.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Micheal&#39;s Blog" title="Micheal&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Micheal&#39;s Blog">Micheal&#39;s Blog</a></h1>
+				<h2 class="blog-motto">talk is cheap, show me the code</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/06/29/Linux下搭建Qt_for_Android开发环境/" title="Linux下搭建Qt for Android开发环境" itemprop="url">Linux下搭建Qt for Android开发环境</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Michael Yang" target="_blank" itemprop="author">Michael Yang</a>
+		
+  <p class="article-time">
+    <time datetime="2015-06-29T08:30:56.000Z" itemprop="datePublished"> 发表于 2015-06-29</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Android-SDK"><span class="toc-number">1.</span> <span class="toc-text">安装Android SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Android-NDK"><span class="toc-number">2.</span> <span class="toc-text">安装Android NDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装JDK"><span class="toc-number">3.</span> <span class="toc-text">安装JDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Qt-for-Android"><span class="toc-number">4.</span> <span class="toc-text">安装Qt for Android</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Qt-Creator"><span class="toc-number">5.</span> <span class="toc-text">配置Qt Creator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新建测试工程"><span class="toc-number">6.</span> <span class="toc-text">新建测试工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在Android设备上运行"><span class="toc-number">7.</span> <span class="toc-text">在Android设备上运行</span></a></li></ol>
+		
+		</div>
+		
+		<p>使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。<br><a id="more"></a></p>
+<h2 id="安装Android-SDK"><a href="#安装Android-SDK" class="headerlink" title="安装Android SDK"></a>安装Android SDK</h2><p>进入<a href="http://developer.android.com/sdk/index.html#Other" target="_blank" rel="external">这个链接</a>，选择Linux版的Android SDK进行下载。</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/1.png" alt=""></p>
+<p>如果下载的网速不够理想，这里有个秒下的方法，就是使用百度云的离线下载工具。百度云离线下载的使用方法这里不作介绍。</p>
+<p>下载完成之后解压，将解压后的文件夹拷贝到一个合适的路径，我这里是/home/michael/Code/android/android-sdk-linux。打开终端模拟器，切换至该路径，然后执行<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> tools</div><div class="line">./android update sdk</div></pre></td></tr></table></figure></p>
+<p>这时会弹出Android SDK Manager的界面，由于这里所有包的下载链接都是来自Google的，自然也是被和谐的，使用全局代理例如VPN可以解决这个问题，我这里来说一下不使用VPN的解决方案。</p>
+<p>点击<em>Tools-&gt;Options</em>，按照下图进行设置然后关闭就可以了：<br><img src="images/Linux下搭建Qt_for_Android开发环境/2.png" alt=""></p>
+<p>下一步是安装需要的包，在所有列出的这些包中，必须安装的有Android SDK Platform-tools和Android SDK Build-tools：<br><img src="images/Linux下搭建Qt_for_Android开发环境/3.png" alt=""></p>
+<p>另外，至少选择一个API level的SDK Platform进行安装，如果后面使用AVD调试Android程序，还需要安装相应的系统镜像。这里我只安装了Android 4.0.3(API15)：<br><img src="images/Linux下搭建Qt_for_Android开发环境/4.png" alt=""></p>
+<p>选择完毕后，点击<em>Install packages</em>，耐心等待安装结束。</p>
+<h2 id="安装Android-NDK"><a href="#安装Android-NDK" class="headerlink" title="安装Android NDK"></a>安装Android NDK</h2><p>进入<a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">这个链接</a>，选择Linux版的Android NDK进行下载。</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/5.png" alt=""></p>
+<p>如果下载的网速不够理想，请使用百度云的离线下载工具。</p>
+<p>下载下来的文件是一个自解压程序，我这里的路径是/home/michael/Downloads/android-ndk-r10e-linux-x86_64.bin，切换至该文件所在目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod a+x android-ndk-r10e-linux-x86_64.bin</div><div class="line">./android-ndk-r10e-linux-x86_64.bin</div></pre></td></tr></table></figure></p>
+<p>这时程序内的文件已被解压至名为android-ndk-r10e的文件夹</p>
+<h2 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h2><p>安装OpenJDK（以Arch Linux为例）：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S jdk7-openjdk</div></pre></td></tr></table></figure></p>
+<h2 id="安装Qt-for-Android"><a href="#安装Qt-for-Android" class="headerlink" title="安装Qt for Android"></a>安装Qt for Android</h2><p>进入<a href="https://www.qt.io/zh-hans/download-open-source/#section-2" target="_blank" rel="external">这个链接</a>，选择Linux版的Qt for Android进行下载。</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/6.png" alt=""></p>
+<p>切换至下载目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod +x qt-opensource-linux-x64-android-5.4.2.run</div><div class="line">./qt-opensource-linux-x64-android-5.4.2.run</div></pre></td></tr></table></figure></p>
+<p>这时会弹出Qt for Android的安装界面，由于是图形化的安装程序，具体步骤不作介绍。</p>
+<h2 id="配置Qt-Creator"><a href="#配置Qt-Creator" class="headerlink" title="配置Qt Creator"></a>配置Qt Creator</h2><p>首先运行Qt Creator。切换至Qt for Android的安装目录，我这里是/home/michael/Code/android/Qt5.4.2_for_Android，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> Tools/QtCreator/bin</div><div class="line">./qtcreator.sh</div></pre></td></tr></table></figure></p>
+<p>点击<em>工具-&gt;选项…</em>，选择Android标签，按下图配置，然后点击确定：<br><img src="images/Linux下搭建Qt_for_Android开发环境/7.png" alt=""></p>
+<p>点击<em>工具-&gt;选项-&gt;调试器</em>，去勾选<em>Warn when debugging “Release” builds</em>一项：<br><img src="images/Linux下搭建Qt_for_Android开发环境/12.png" alt=""></p>
+<h2 id="新建测试工程"><a href="#新建测试工程" class="headerlink" title="新建测试工程"></a>新建测试工程</h2><p>在Qt Creator中点击<em>文件-&gt;新建文件或项目…</em>，选择<em>Qt Quick Application</em>模板，在<em>Kit Selection</em>这一步按下图选择，其他都按默认：<br><img src="images/Linux下搭建Qt_for_Android开发环境/8.png" alt=""></p>
+<h2 id="在Android设备上运行"><a href="#在Android设备上运行" class="headerlink" title="在Android设备上运行"></a>在Android设备上运行</h2><p>构建该项目，第一次构建时会下载Gradle，稍慢。然后接入一台开启了USB调试的Android设备，点击运行。这时会弹出对话框让你选择Android设备，可以是真机，也可以是AVD，这里选择我的Android手机，如下图：<br><img src="images/Linux下搭建Qt_for_Android开发环境/9.png" alt=""><br>运行结果：</p>
+<p><img src="images/Linux下搭建Qt_for_Android开发环境/10.jpg" alt=""><br><img src="images/Linux下搭建Qt_for_Android开发环境/11.jpg" alt=""></p>
+<p>参考：<br><a href="http://doc.qt.io/qt-5/androidgs.html" target="_blank" rel="external">http://doc.qt.io/qt-5/androidgs.html</a><br><a href="http://www.kdab.com/qt-on-android-episode-2/" target="_blank" rel="external">http://www.kdab.com/qt-on-android-episode-2/</a><br><a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">http://developer.android.com/ndk/downloads/index.html</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Qt/">Qt</a>►<a class="article-category-link" href="/categories/Qt/Qt-Quick/">Qt Quick</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Linux/">Linux</a><a href="/tags/Android/">Android</a><a href="/tags/Qt/">Qt</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="https://ohmyarch.github.io/2015/06/29/Linux下搭建Qt_for_Android开发环境/" data-title="Linux下搭建Qt for Android开发环境 | Micheal&#39;s Blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/07/01/Hexo添加RSS和Sitemap/" title="Hexo添加RSS和Sitemap">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Hexo添加RSS和Sitemap</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/12/24/Hexo添加Favicon/"  title="Hexo添加Favicon">
+ <strong>下一篇：</strong><br/> 
+ <span>Hexo添加Favicon
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+<section id="comments" class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Android-SDK"><span class="toc-number">1.</span> <span class="toc-text">安装Android SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Android-NDK"><span class="toc-number">2.</span> <span class="toc-text">安装Android NDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装JDK"><span class="toc-number">3.</span> <span class="toc-text">安装JDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Qt-for-Android"><span class="toc-number">4.</span> <span class="toc-text">安装Qt for Android</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Qt-Creator"><span class="toc-number">5.</span> <span class="toc-text">配置Qt Creator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新建测试工程"><span class="toc-number">6.</span> <span class="toc-text">新建测试工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在Android设备上运行"><span class="toc-number">7.</span> <span class="toc-text">在Android设备上运行</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="ohmyarch" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/IDE/" title="IDE">IDE<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/IDE/KDevelop/" title="KDevelop">KDevelop<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Music/" title="Music">Music<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Qt/" title="Qt">Qt<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/IDE/Qt-Creator/" title="Qt Creator">Qt Creator<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Qt/Qt-Quick/" title="Qt Quick">Qt Quick<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Linux/openSUSE/" title="openSUSE">openSUSE<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Linux/" title="Linux">Linux<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/KDevelop/" title="KDevelop">KDevelop<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Qt-Creator/" title="Qt Creator">Qt Creator<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Android/" title="Android">Android<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/C/" title="C++">C++<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Qt/" title="Qt">Qt<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/GRUB/" title="GRUB">GRUB<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/openSUSE/" title="openSUSE">openSUSE<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Wine/" title="Wine">Wine<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Music/" title="Music">Music<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/GRUB/" style="font-size: 10px;">GRUB</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/KDevelop/" style="font-size: 13.33px;">KDevelop</a> <a href="/tags/Linux/" style="font-size: 16.67px;">Linux</a> <a href="/tags/Music/" style="font-size: 10px;">Music</a> <a href="/tags/Qt/" style="font-size: 10px;">Qt</a> <a href="/tags/Qt-Creator/" style="font-size: 13.33px;">Qt Creator</a> <a href="/tags/Wine/" style="font-size: 10px;">Wine</a> <a href="/tags/openSUSE/" style="font-size: 10px;">openSUSE</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://avplayer.org" target="_blank" title="avplayer社区">avplayer社区</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://riverflows.in" target="_blank" title="K&#39;s Blog">K&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello, I&#39;m Michael Yang. <br/>
+			This is my blog, believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		<a href="https://github.com/ohmyarch" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		<a href="https://twitter.com/ohmyarch" target="_blank" class="icon-twitter" title="twitter"></a>
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:ohmyarchlinux@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+				<div class="cc-license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+            <img src="/img/cc-by-nc-sa.svg" alt="Creative Commons" />
+          </a>
+        </div>
+    
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="Michael Yang">Michael Yang</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+<script type="text/javascript">
+
+var disqus_shortname = 'ohmyarch';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
