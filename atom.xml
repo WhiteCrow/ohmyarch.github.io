@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ohmyarch.github.io/"/>
-  <updated>2017-01-15T10:41:37.164Z</updated>
+  <updated>2017-01-15T14:29:51.292Z</updated>
   <id>https://ohmyarch.github.io/</id>
   
   <author>
@@ -14,6 +14,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux下终极字体配置方案</title>
+    <link href="https://ohmyarch.github.io/2017/01/15/Linux%E4%B8%8B%E7%BB%88%E6%9E%81%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/"/>
+    <id>https://ohmyarch.github.io/2017/01/15/Linux下终极字体配置方案/</id>
+    <published>2017-01-15T11:05:12.000Z</published>
+    <updated>2017-01-15T14:29:51.292Z</updated>
+    
+    <content type="html"><![CDATA[<p>一直以来，字体渲染问题困扰着很多Linux新手甚至老手。我经常在各种群看到各种字体相关的问题，还有人搞什么<a href="https://wiki.archlinux.org/index.php/Infinality" target="_blank" rel="external">Infinality</a>。不要搞Infinality，不要搞Infinality，不要搞Infinality，重要的事情说三遍。是时候结束这个尴尬的局面了。Linux用户就只能面对糟糕的字体渲染吗？不！<strong>只要配置得当，Linux下的字体显示效果将是桌面系统(Linux/macOS/Windows)中最好的</strong>。<br><a id="more"></a></p>
+<p>首先说明一下我的环境:</p>
+<ul>
+<li>OS: Arch Linux</li>
+<li>DE: KDE</li>
+</ul>
+<p>其他发行版/桌面环境道理都差不多，摸索着搞一下没问题的。</p>
+<h2 id="安装字体"><a href="#安装字体" class="headerlink" title="安装字体"></a>安装字体</h2><h3 id="安装Noto全系字体"><a href="#安装Noto全系字体" class="headerlink" title="安装Noto全系字体"></a>安装<a href="https://en.wikipedia.org/wiki/Noto_fonts" target="_blank" rel="external">Noto</a>全系字体</h3><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji</div></pre></td></tr></table></figure>
+<p>如果你也是KDE桌面，noto-fonts可能已被安装，因为它是plasma-integration这个包的依赖。</p>
+<h3 id="安装Meslo字体"><a href="#安装Meslo字体" class="headerlink" title="安装Meslo字体"></a>安装<a href="https://github.com/andreberg/Meslo-Font" target="_blank" rel="external">Meslo</a>字体</h3><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yaourt -S ttf-meslo</div></pre></td></tr></table></figure>
+<h2 id="下载-amp-放置字体配置文件"><a href="#下载-amp-放置字体配置文件" class="headerlink" title="下载&amp;放置字体配置文件"></a>下载&amp;放置字体配置文件</h2><p>我的字体配置可以在<a href="https://github.com/ohmyarch/fontconfig-zh-cn" target="_blank" rel="external">fontconfig-zh-cn</a>这个仓库下到，配置文件fonts.conf放到~/.config/fontconfig下，如果已存在配置文件，覆盖即可。</p>
+<h2 id="刷新字体缓存"><a href="#刷新字体缓存" class="headerlink" title="刷新字体缓存"></a>刷新字体缓存</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">fc</span>-cache --force --verbose</div><div class="line"><span class="built_in">fc</span>-cache-32 --force --verbose</div></pre></td></tr></table></figure>
+<h2 id="设置字体DPI"><a href="#设置字体DPI" class="headerlink" title="设置字体DPI"></a>设置字体DPI</h2><p>用<a href="http://pxcalc.com/" target="_blank" rel="external">CX CALC</a>这个工具计算出对应你显示器分辨率的DPI值，填入<em>系统设置-&gt;外观-&gt;字体-&gt;固定字体DPI</em>：<br><img src="/images/Linux下终极字体配置方案/1.png" alt=""><br><strong>注：个人感觉<a href="http://pxcalc.com/" target="_blank" rel="external">CX CALC</a>计算的值偏小，可在按本文全部配置完成后适当调高。</strong></p>
+<h2 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体"></a>设置字体</h2><p>还是在字体设置这个界面，按下图设置：<br><img src="/images/Linux下终极字体配置方案/2.png" alt=""><br>图中显示的无衬线和等宽是中文译名，分别对应点击右侧<em>选择…</em>按钮后弹出的字体列表中的：<em>Sans Serif</em>和<em>Monospace</em>。</p>
+<h2 id="设置GTK程序的字体"><a href="#设置GTK程序的字体" class="headerlink" title="设置GTK程序的字体"></a>设置GTK程序的字体</h2><p><em>系统设置-&gt;外观-&gt;应用程序风格-&gt;GNOME 程序风格(GTK)-&gt;字体</em>：<br><img src="/images/Linux下终极字体配置方案/3.png" alt=""></p>
+<h2 id="设置KDE4-Qt4程序的字体"><a href="#设置KDE4-Qt4程序的字体" class="headerlink" title="设置KDE4/Qt4程序的字体"></a>设置KDE4/Qt4程序的字体</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">qtconfig-qt4</div></pre></td></tr></table></figure>
+<p>在弹出对话框中点击Fonts标签，按下图设置：<br><img src="/images/Linux下终极字体配置方案/4.png" alt=""></p>
+<h2 id="设置wine程序的字体DPI"><a href="#设置wine程序的字体DPI" class="headerlink" title="设置wine程序的字体DPI"></a>设置wine程序的字体DPI</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">winecfg</div></pre></td></tr></table></figure>
+<p>在弹出的对话框中点击<em>显示</em>标签，DPI与刚才在KDE字体设置中设置的一致：<br><img src="/images/Linux下终极字体配置方案/5.png" alt=""></p>
+<h2 id="注销，重新登入"><a href="#注销，重新登入" class="headerlink" title="注销，重新登入"></a>注销，重新登入</h2><h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><h3 id="Konsole"><a href="#Konsole" class="headerlink" title="Konsole"></a>Konsole</h3><p><img src="/images/Linux下终极字体配置方案/6.png" alt=""><br><img src="/images/Linux下终极字体配置方案/7.png" alt=""><br><img src="/images/Linux下终极字体配置方案/8.png" alt=""></p>
+<h3 id="KDevelop-Kate"><a href="#KDevelop-Kate" class="headerlink" title="KDevelop/Kate"></a>KDevelop/Kate</h3><p><img src="/images/Linux下终极字体配置方案/9.png" alt=""><br><img src="/images/Linux下终极字体配置方案/10.png" alt=""></p>
+<p><strong>注：由于Qt的一个Bug，中英文混在一块的时候可能会上下错位，本文用到的字体配置想办法避开了这一问题</strong><br><img src="/images/Linux下终极字体配置方案/11.png" alt=""></p>
+<p>如果你觉得按本文配置后效果不错，请给我的<a href="https://github.com/ohmyarch/fontconfig-zh-cn" target="_blank" rel="external">字体配置仓库</a>点个⭐️，谢谢。后续我会写一些应用程序相关的字体配置文章，敬请期待😉。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一直以来，字体渲染问题困扰着很多Linux新手甚至老手。我经常在各种群看到各种字体相关的问题，还有人搞什么&lt;a href=&quot;https://wiki.archlinux.org/index.php/Infinality&quot;&gt;Infinality&lt;/a&gt;。不要搞Infinality，不要搞Infinality，不要搞Infinality，重要的事情说三遍。是时候结束这个尴尬的局面了。Linux用户就只能面对糟糕的字体渲染吗？不！&lt;strong&gt;只要配置得当，Linux下的字体显示效果将是桌面系统(Linux/macOS/Windows)中最好的&lt;/strong&gt;。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://ohmyarch.github.io/categories/Linux/"/>
+    
+      <category term="Font configuration" scheme="https://ohmyarch.github.io/categories/Linux/Font-configuration/"/>
+    
+    
+      <category term="Linux" scheme="https://ohmyarch.github.io/tags/Linux/"/>
+    
+      <category term="Fonts" scheme="https://ohmyarch.github.io/tags/Fonts/"/>
+    
+      <category term="Fontconfig" scheme="https://ohmyarch.github.io/tags/Fontconfig/"/>
+    
+  </entry>
   
   <entry>
     <title>Qt Creator添加配色方案</title>
