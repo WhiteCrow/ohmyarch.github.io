@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ohmyarch.github.io/"/>
-  <updated>2017-01-15T09:02:40.018Z</updated>
+  <updated>2017-01-15T10:41:37.164Z</updated>
   <id>https://ohmyarch.github.io/</id>
   
   <author>
@@ -20,19 +20,19 @@
     <link href="https://ohmyarch.github.io/2016/01/21/Qt_Creator%E6%B7%BB%E5%8A%A0%E9%85%8D%E8%89%B2%E6%96%B9%E6%A1%88/"/>
     <id>https://ohmyarch.github.io/2016/01/21/Qt_Creator添加配色方案/</id>
     <published>2016-01-21T01:18:01.000Z</published>
-    <updated>2017-01-15T09:02:40.018Z</updated>
+    <updated>2017-01-15T10:41:37.164Z</updated>
     
     <content type="html"><![CDATA[<p>Qt Creator自带的几个配色方案都太丑了，如果是作为主力IDE使用，还是换个好看点的配色吧。<br><a id="more"></a></p>
 <h2 id="下载配色方案"><a href="#下载配色方案" class="headerlink" title="下载配色方案"></a>下载配色方案</h2><p>Qt Creator的配色方案相对来说算比较好找的，使用Google或者Github搜索“Qt Creator Color Scheme”或者类似的关键词就能搜到一些。下面列出我感觉还不错的几个供大家参考：</p>
-<h3 id="Qt-Creator-Wombat-Theme"><a href="#Qt-Creator-Wombat-Theme" class="headerlink" title="Qt Creator Wombat Theme"></a><a href="https://github.com/alexpana/qt-creator-wombat-theme" target="_blank" rel="external">Qt Creator Wombat Theme</a></h3><p><img src="images/Qt_Creator添加配色方案/1.png" alt=""></p>
-<h3 id="Dusk-Monokai-and-Twilight-themes-for-Qt-Creator"><a href="#Dusk-Monokai-and-Twilight-themes-for-Qt-Creator" class="headerlink" title="Dusk, Monokai and Twilight themes for Qt Creator"></a><a href="https://github.com/procedural/qtcreator-themes" target="_blank" rel="external">Dusk, Monokai and Twilight themes for Qt Creator</a></h3><p><img src="images/Qt_Creator添加配色方案/2.png" alt=""></p>
-<p><img src="images/Qt_Creator添加配色方案/3.png" alt=""></p>
-<p><img src="images/Qt_Creator添加配色方案/4.png" alt=""></p>
-<h3 id="Solarized-colors-for-Qt-Creator"><a href="#Solarized-colors-for-Qt-Creator" class="headerlink" title="Solarized colors for Qt Creator"></a><a href="https://github.com/artm/qtcreator-solarized-syntax" target="_blank" rel="external">Solarized colors for Qt Creator</a></h3><p><img src="images/Qt_Creator添加配色方案/5.png" alt=""></p>
-<h3 id="Ildar"><a href="#Ildar" class="headerlink" title="Ildar"></a><a href="https://github.com/gilmanov-ildar/qtcreator-themes" target="_blank" rel="external">Ildar</a></h3><p><img src="images/Qt_Creator添加配色方案/6.png" alt=""></p>
-<p><img src="images/Qt_Creator添加配色方案/7.png" alt=""></p>
-<p><img src="images/Qt_Creator添加配色方案/8.png" alt=""></p>
-<p><img src="images/Qt_Creator添加配色方案/9.png" alt=""></p>
+<h3 id="Qt-Creator-Wombat-Theme"><a href="#Qt-Creator-Wombat-Theme" class="headerlink" title="Qt Creator Wombat Theme"></a><a href="https://github.com/alexpana/qt-creator-wombat-theme" target="_blank" rel="external">Qt Creator Wombat Theme</a></h3><p><img src="/images/Qt_Creator添加配色方案/1.png" alt=""></p>
+<h3 id="Dusk-Monokai-and-Twilight-themes-for-Qt-Creator"><a href="#Dusk-Monokai-and-Twilight-themes-for-Qt-Creator" class="headerlink" title="Dusk, Monokai and Twilight themes for Qt Creator"></a><a href="https://github.com/procedural/qtcreator-themes" target="_blank" rel="external">Dusk, Monokai and Twilight themes for Qt Creator</a></h3><p><img src="/images/Qt_Creator添加配色方案/2.png" alt=""></p>
+<p><img src="/images/Qt_Creator添加配色方案/3.png" alt=""></p>
+<p><img src="/images/Qt_Creator添加配色方案/4.png" alt=""></p>
+<h3 id="Solarized-colors-for-Qt-Creator"><a href="#Solarized-colors-for-Qt-Creator" class="headerlink" title="Solarized colors for Qt Creator"></a><a href="https://github.com/artm/qtcreator-solarized-syntax" target="_blank" rel="external">Solarized colors for Qt Creator</a></h3><p><img src="/images/Qt_Creator添加配色方案/5.png" alt=""></p>
+<h3 id="Ildar"><a href="#Ildar" class="headerlink" title="Ildar"></a><a href="https://github.com/gilmanov-ildar/qtcreator-themes" target="_blank" rel="external">Ildar</a></h3><p><img src="/images/Qt_Creator添加配色方案/6.png" alt=""></p>
+<p><img src="/images/Qt_Creator添加配色方案/7.png" alt=""></p>
+<p><img src="/images/Qt_Creator添加配色方案/8.png" alt=""></p>
+<p><img src="/images/Qt_Creator添加配色方案/9.png" alt=""></p>
 <h2 id="导入配色方案"><a href="#导入配色方案" class="headerlink" title="导入配色方案"></a>导入配色方案</h2><p>Qt Creator并没有提供直接导入配色方案的方法，而是需要下载.xml格式的配置文件然后拷贝至特定的文件夹。该文件夹的路径是平台相关的：</p>
 <h3 id="Linux-Mac-OS-X"><a href="#Linux-Mac-OS-X" class="headerlink" title="Linux / Mac OS X"></a>Linux / Mac OS X</h3><blockquote>
 <p>~/.config/QtProject/qtcreator/styles</p>
@@ -40,7 +40,7 @@
 <h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><blockquote>
 <p>Users\<user name="">\AppData\Roaming\QtProject\qtcreator\styles</user></p>
 </blockquote>
-<h2 id="选择并使用配色方案"><a href="#选择并使用配色方案" class="headerlink" title="选择并使用配色方案"></a>选择并使用配色方案</h2><p>打开Qt Creator，点击<em>工具-&gt;选项-&gt;文本编辑器-&gt;字体和颜色-&gt;配色方案</em>，然后选择自己喜欢的配色方案并应用就OK了：<br><img src="images/Qt_Creator添加配色方案/10.png" alt=""></p>
+<h2 id="选择并使用配色方案"><a href="#选择并使用配色方案" class="headerlink" title="选择并使用配色方案"></a>选择并使用配色方案</h2><p>打开Qt Creator，点击<em>工具-&gt;选项-&gt;文本编辑器-&gt;字体和颜色-&gt;配色方案</em>，然后选择自己喜欢的配色方案并应用就OK了：<br><img src="/images/Qt_Creator添加配色方案/10.png" alt=""></p>
 ]]></content>
     
     <summary type="html">
@@ -63,15 +63,15 @@
     <link href="https://ohmyarch.github.io/2016/01/20/KDevelop%E6%B7%BB%E5%8A%A0%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
     <id>https://ohmyarch.github.io/2016/01/20/KDevelop添加帮助文档/</id>
     <published>2016-01-20T12:59:55.000Z</published>
-    <updated>2017-01-15T09:10:28.204Z</updated>
+    <updated>2017-01-15T10:40:51.328Z</updated>
     
     <content type="html"><![CDATA[<p>KDevelop可以通过插件支持Qt Compressed Help，即.qch格式的帮助文档。<br><a id="more"></a></p>
 <h2 id="下载第三方帮助文档"><a href="#下载第三方帮助文档" class="headerlink" title="下载第三方帮助文档"></a>下载第三方帮助文档</h2><p>进入<a href="https://wiki.qt.io/Qt_Creator_Documentation_Gallery" target="_blank" rel="external">Qt Creator Documentation Gallery</a>下载.qch格式的第三方帮助文档</p>
-<h2 id="确保启用了Qt-Documentation插件"><a href="#确保启用了Qt-Documentation插件" class="headerlink" title="确保启用了Qt Documentation插件"></a>确保启用了Qt Documentation插件</h2><p>KDevelop内置并默认启用Qt Documentation插件。打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，如果没有<em>QtHelp Documentation</em>标签，那就需要先启用Qt Documentation插件：点击<em>插件</em>标签，然后勾选<em>Qt Documentation</em>一项<br><img src="images/KDevelop添加帮助文档/1.png" alt=""></p>
-<h2 id="添加-qch格式的帮助文档"><a href="#添加-qch格式的帮助文档" class="headerlink" title="添加.qch格式的帮助文档"></a>添加.qch格式的帮助文档</h2><p>点击<em>QtHelp Documentation</em>标签，这里有两种添加方式，一种是点击<em>添加</em>按钮，这种方式在添加时可以自定义该文档的名称和图标，添加完成后就可以对名称和图标进行修改。<br><img src="images/KDevelop添加帮助文档/2.png" alt=""></p>
-<p>另一种是点击<em>Choose dir</em>，每次开启KDevelop时同步该目录下的帮助文档，但是这种方法添加的文档不会显示在<em>管理Qt帮助文档</em>列表中，即不能对文档名称和图标进行修改。<br><img src="images/KDevelop添加帮助文档/3.png" alt=""><br><br><br>推荐使用第一种方式。</p>
-<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="images/KDevelop添加帮助文档/4.png" alt=""></p>
-<p><img src="images/KDevelop添加帮助文档/5.png" alt=""><br><br><br>好吧我屏幕的确太小了～</p>
+<h2 id="确保启用了Qt-Documentation插件"><a href="#确保启用了Qt-Documentation插件" class="headerlink" title="确保启用了Qt Documentation插件"></a>确保启用了Qt Documentation插件</h2><p>KDevelop内置并默认启用Qt Documentation插件。打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，如果没有<em>QtHelp Documentation</em>标签，那就需要先启用Qt Documentation插件：点击<em>插件</em>标签，然后勾选<em>Qt Documentation</em>一项<br><img src="/images/KDevelop添加帮助文档/1.png" alt=""></p>
+<h2 id="添加-qch格式的帮助文档"><a href="#添加-qch格式的帮助文档" class="headerlink" title="添加.qch格式的帮助文档"></a>添加.qch格式的帮助文档</h2><p>点击<em>QtHelp Documentation</em>标签，这里有两种添加方式，一种是点击<em>添加</em>按钮，这种方式在添加时可以自定义该文档的名称和图标，添加完成后就可以对名称和图标进行修改。<br><img src="/images/KDevelop添加帮助文档/2.png" alt=""></p>
+<p>另一种是点击<em>Choose dir</em>，每次开启KDevelop时同步该目录下的帮助文档，但是这种方法添加的文档不会显示在<em>管理Qt帮助文档</em>列表中，即不能对文档名称和图标进行修改。<br><img src="/images/KDevelop添加帮助文档/3.png" alt=""><br><br><br>推荐使用第一种方式。</p>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/images/KDevelop添加帮助文档/4.png" alt=""></p>
+<p><img src="/images/KDevelop添加帮助文档/5.png" alt=""><br><br><br>好吧我屏幕的确太小了～</p>
 ]]></content>
     
     <summary type="html">
@@ -94,14 +94,14 @@
     <link href="https://ohmyarch.github.io/2016/01/20/Qt_Creator%E6%B7%BB%E5%8A%A0%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/"/>
     <id>https://ohmyarch.github.io/2016/01/20/Qt_Creator添加帮助文档/</id>
     <published>2016-01-20T02:04:07.000Z</published>
-    <updated>2017-01-15T09:04:42.547Z</updated>
+    <updated>2017-01-15T10:41:10.601Z</updated>
     
     <content type="html"><![CDATA[<p>早些时候用Qt Creator作为主力IDE，那时就想过如果Qt Creator里面也能查C++标准库的文档就好了。然而后来转用了KDevelop，查文档也是上<a href="http://en.cppreference.com/w/" target="_blank" rel="external">cppreference</a>。最近又想细致的学习一下Qt Quick，就目前来说，KDevelop对Qt Quick的支持还差很多，所以又用上了Qt Creator，顺便学习了导入帮助文档的方法。<br><a id="more"></a></p>
 <h2 id="下载第三方帮助文档"><a href="#下载第三方帮助文档" class="headerlink" title="下载第三方帮助文档"></a>下载第三方帮助文档</h2><p>进入<a href="https://wiki.qt.io/Qt_Creator_Documentation_Gallery" target="_blank" rel="external">Qt Creator Documentation Gallery</a>下载.qch格式的第三方帮助文档</p>
-<h2 id="导入-qch格式的帮助文档"><a href="#导入-qch格式的帮助文档" class="headerlink" title="导入.qch格式的帮助文档"></a>导入.qch格式的帮助文档</h2><p>打开Qt Creator，点击<em>工具-&gt;选项-&gt;帮助-&gt;文档</em>，点击<em>添加…</em>，然后添加你刚下载的qch文件：<br><img src="images/Qt_Creator添加帮助文档/1.png" alt=""></p>
+<h2 id="导入-qch格式的帮助文档"><a href="#导入-qch格式的帮助文档" class="headerlink" title="导入.qch格式的帮助文档"></a>导入.qch格式的帮助文档</h2><p>打开Qt Creator，点击<em>工具-&gt;选项-&gt;帮助-&gt;文档</em>，点击<em>添加…</em>，然后添加你刚下载的qch文件：<br><img src="/images/Qt_Creator添加帮助文档/1.png" alt=""></p>
 <p>这样就添加完成了。<strong>注意：这里的添加只是注册文档，如果删除了原qch文件，这里添加的文档也就没了。</strong></p>
-<p>有些文档支持context help (F1)，比如cppreference的离线文档：<br><img src="images/Qt_Creator添加帮助文档/2.png" alt=""></p>
-<p>按下F1：<br><img src="images/Qt_Creator添加帮助文档/3.png" alt=""></p>
+<p>有些文档支持context help (F1)，比如cppreference的离线文档：<br><img src="/images/Qt_Creator添加帮助文档/2.png" alt=""></p>
+<p>按下F1：<br><img src="/images/Qt_Creator添加帮助文档/3.png" alt=""></p>
 ]]></content>
     
     <summary type="html">
@@ -124,14 +124,14 @@
     <link href="https://ohmyarch.github.io/2016/01/03/KDevelop%E4%BD%BF%E7%94%A8clang-format%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%BA%90%E4%BB%A3%E7%A0%81/"/>
     <id>https://ohmyarch.github.io/2016/01/03/KDevelop使用clang-format格式化源代码/</id>
     <published>2016-01-03T07:07:49.000Z</published>
-    <updated>2017-01-15T09:00:33.488Z</updated>
+    <updated>2017-01-15T10:40:08.723Z</updated>
     
     <content type="html"><![CDATA[<p>治好你的强迫症<br><a id="more"></a></p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">clang-format -version</div></pre></td></tr></table></figure></p>
 <p>如果输出结果显示clang-format命令不可用，就需要先安装相应的软件包。</p>
 <p>对于Arch Linux:<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S clang</div></pre></td></tr></table></figure></p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，选择<em>Source Formatter</em>标签，选择格式化方式为<em>Custom Script Formatter</em>，再点击<em>新建</em>以创建一个新的格式化样式：<br><img src="images/KDevelop使用clang-foramt格式化源代码/1.png" alt=""></p>
-<p>给新建的格式化样式起个名字，比如“clang_format_source”，点击<em>编辑…</em>：<br><img src="images/KDevelop使用clang-foramt格式化源代码/2.png" alt=""></p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，选择<em>Source Formatter</em>标签，选择格式化方式为<em>Custom Script Formatter</em>，再点击<em>新建</em>以创建一个新的格式化样式：<br><img src="/images/KDevelop使用clang-foramt格式化源代码/1.png" alt=""></p>
+<p>给新建的格式化样式起个名字，比如“clang_format_source”，点击<em>编辑…</em>：<br><img src="/images/KDevelop使用clang-foramt格式化源代码/2.png" alt=""></p>
 <p>然后输入合适的clang-format命令，右边的预览框可以实时预览命令的执行结果，很方便。这里我用的命令是：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">clang-format -style=<span class="string">"&#123;BasedOnStyle: llvm, IndentWidth: 4&#125;"</span> -i <span class="variable">$TMPFILE</span></div></pre></td></tr></table></figure></p>
 <p><strong>注意：别忘了对C和C++都设置为使用刚刚创建的格式化样式，因为*.h会被视为C语言头文件。如果只有C++设置为新的格式化样式，那么头文件将不会按照新样式进行格式化。</strong></p>
 ]]></content>
@@ -206,34 +206,34 @@
     <link href="https://ohmyarch.github.io/2015/06/29/Linux%E4%B8%8B%E6%90%AD%E5%BB%BAQt_for_Android%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     <id>https://ohmyarch.github.io/2015/06/29/Linux下搭建Qt_for_Android开发环境/</id>
     <published>2015-06-29T08:30:56.000Z</published>
-    <updated>2017-01-15T09:13:09.222Z</updated>
+    <updated>2017-01-15T10:42:56.193Z</updated>
     
     <content type="html"><![CDATA[<p>使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。<br><a id="more"></a></p>
 <h2 id="安装Android-SDK"><a href="#安装Android-SDK" class="headerlink" title="安装Android SDK"></a>安装Android SDK</h2><p>进入<a href="http://developer.android.com/sdk/index.html#Other" target="_blank" rel="external">这个链接</a>，选择Linux版的Android SDK进行下载。</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/1.png" alt=""></p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/1.png" alt=""></p>
 <p>如果下载的网速不够理想，这里有个秒下的方法，就是使用百度云的离线下载工具。百度云离线下载的使用方法这里不作介绍。</p>
 <p>下载完成之后解压，将解压后的文件夹拷贝到一个合适的路径，我这里是/home/michael/Code/android/android-sdk-linux。打开终端模拟器，切换至该路径，然后执行<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> tools</div><div class="line">./android update sdk</div></pre></td></tr></table></figure></p>
 <p>这时会弹出Android SDK Manager的界面，由于这里所有包的下载链接都是来自Google的，自然也是被和谐的，使用全局代理例如VPN可以解决这个问题，我这里来说一下不使用VPN的解决方案。</p>
-<p>点击<em>Tools-&gt;Options</em>，按照下图进行设置然后关闭就可以了：<br><img src="images/Linux下搭建Qt_for_Android开发环境/2.png" alt=""></p>
-<p>下一步是安装需要的包，在所有列出的这些包中，必须安装的有Android SDK Platform-tools和Android SDK Build-tools：<br><img src="images/Linux下搭建Qt_for_Android开发环境/3.png" alt=""></p>
-<p>另外，至少选择一个API level的SDK Platform进行安装，如果后面使用AVD调试Android程序，还需要安装相应的系统镜像。这里我只安装了Android 4.0.3(API15)：<br><img src="images/Linux下搭建Qt_for_Android开发环境/4.png" alt=""></p>
+<p>点击<em>Tools-&gt;Options</em>，按照下图进行设置然后关闭就可以了：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/2.png" alt=""></p>
+<p>下一步是安装需要的包，在所有列出的这些包中，必须安装的有Android SDK Platform-tools和Android SDK Build-tools：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/3.png" alt=""></p>
+<p>另外，至少选择一个API level的SDK Platform进行安装，如果后面使用AVD调试Android程序，还需要安装相应的系统镜像。这里我只安装了Android 4.0.3(API15)：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/4.png" alt=""></p>
 <p>选择完毕后，点击<em>Install packages</em>，耐心等待安装结束。</p>
 <h2 id="安装Android-NDK"><a href="#安装Android-NDK" class="headerlink" title="安装Android NDK"></a>安装Android NDK</h2><p>进入<a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">这个链接</a>，选择Linux版的Android NDK进行下载。</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/5.png" alt=""></p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/5.png" alt=""></p>
 <p>如果下载的网速不够理想，请使用百度云的离线下载工具。</p>
 <p>下载下来的文件是一个自解压程序，我这里的路径是/home/michael/Downloads/android-ndk-r10e-linux-x86_64.bin，切换至该文件所在目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod a+x android-ndk-r10e-linux-x86_64.bin</div><div class="line">./android-ndk-r10e-linux-x86_64.bin</div></pre></td></tr></table></figure></p>
 <p>这时程序内的文件已被解压至名为android-ndk-r10e的文件夹</p>
 <h2 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h2><p>安装OpenJDK（以Arch Linux为例）：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S jdk7-openjdk</div></pre></td></tr></table></figure></p>
 <h2 id="安装Qt-for-Android"><a href="#安装Qt-for-Android" class="headerlink" title="安装Qt for Android"></a>安装Qt for Android</h2><p>进入<a href="https://www.qt.io/zh-hans/download-open-source/#section-2" target="_blank" rel="external">这个链接</a>，选择Linux版的Qt for Android进行下载。</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/6.png" alt=""></p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/6.png" alt=""></p>
 <p>切换至下载目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod +x qt-opensource-linux-x64-android-5.4.2.run</div><div class="line">./qt-opensource-linux-x64-android-5.4.2.run</div></pre></td></tr></table></figure></p>
 <p>这时会弹出Qt for Android的安装界面，由于是图形化的安装程序，具体步骤不作介绍。</p>
 <h2 id="配置Qt-Creator"><a href="#配置Qt-Creator" class="headerlink" title="配置Qt Creator"></a>配置Qt Creator</h2><p>首先运行Qt Creator。切换至Qt for Android的安装目录，我这里是/home/michael/Code/android/Qt5.4.2_for_Android，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> Tools/QtCreator/bin</div><div class="line">./qtcreator.sh</div></pre></td></tr></table></figure></p>
-<p>点击<em>工具-&gt;选项…</em>，选择Android标签，按下图配置，然后点击确定：<br><img src="images/Linux下搭建Qt_for_Android开发环境/7.png" alt=""></p>
-<p>点击<em>工具-&gt;选项-&gt;调试器</em>，去勾选<em>Warn when debugging “Release” builds</em>一项：<br><img src="images/Linux下搭建Qt_for_Android开发环境/12.png" alt=""></p>
-<h2 id="新建测试工程"><a href="#新建测试工程" class="headerlink" title="新建测试工程"></a>新建测试工程</h2><p>在Qt Creator中点击<em>文件-&gt;新建文件或项目…</em>，选择<em>Qt Quick Application</em>模板，在<em>Kit Selection</em>这一步按下图选择，其他都按默认：<br><img src="images/Linux下搭建Qt_for_Android开发环境/8.png" alt=""></p>
-<h2 id="在Android设备上运行"><a href="#在Android设备上运行" class="headerlink" title="在Android设备上运行"></a>在Android设备上运行</h2><p>构建该项目，第一次构建时会下载Gradle，稍慢。然后接入一台开启了USB调试的Android设备，点击运行。这时会弹出对话框让你选择Android设备，可以是真机，也可以是AVD，这里选择我的Android手机，如下图：<br><img src="images/Linux下搭建Qt_for_Android开发环境/9.png" alt=""><br>运行结果：</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/10.jpg" alt=""><br><img src="images/Linux下搭建Qt_for_Android开发环境/11.jpg" alt=""></p>
+<p>点击<em>工具-&gt;选项…</em>，选择Android标签，按下图配置，然后点击确定：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/7.png" alt=""></p>
+<p>点击<em>工具-&gt;选项-&gt;调试器</em>，去勾选<em>Warn when debugging “Release” builds</em>一项：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/12.png" alt=""></p>
+<h2 id="新建测试工程"><a href="#新建测试工程" class="headerlink" title="新建测试工程"></a>新建测试工程</h2><p>在Qt Creator中点击<em>文件-&gt;新建文件或项目…</em>，选择<em>Qt Quick Application</em>模板，在<em>Kit Selection</em>这一步按下图选择，其他都按默认：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/8.png" alt=""></p>
+<h2 id="在Android设备上运行"><a href="#在Android设备上运行" class="headerlink" title="在Android设备上运行"></a>在Android设备上运行</h2><p>构建该项目，第一次构建时会下载Gradle，稍慢。然后接入一台开启了USB调试的Android设备，点击运行。这时会弹出对话框让你选择Android设备，可以是真机，也可以是AVD，这里选择我的Android手机，如下图：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/9.png" alt=""><br>运行结果：</p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/10.jpg" alt=""><br><img src="/images/Linux下搭建Qt_for_Android开发环境/11.jpg" alt=""></p>
 <p>参考：<br><a href="http://doc.qt.io/qt-5/androidgs.html" target="_blank" rel="external">http://doc.qt.io/qt-5/androidgs.html</a><br><a href="http://www.kdab.com/qt-on-android-episode-2/" target="_blank" rel="external">http://www.kdab.com/qt-on-android-episode-2/</a><br><a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">http://developer.android.com/ndk/downloads/index.html</a></p>
 ]]></content>
     
@@ -312,10 +312,10 @@
     <link href="https://ohmyarch.github.io/2014/12/23/Hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E7%B1%BB%E5%88%AB/"/>
     <id>https://ohmyarch.github.io/2014/12/23/Hexo新建页面类别/</id>
     <published>2014-12-23T04:51:29.000Z</published>
-    <updated>2017-01-15T08:59:33.679Z</updated>
+    <updated>2017-01-15T10:39:22.335Z</updated>
     
     <content type="html"><![CDATA[<p>一些Hexo主题的Demo页面有多种页面类别，比如下面这个：</p>
-<p><img src="images/Hexo新建页面类别/1.png" alt=""></p>
+<p><img src="/images/Hexo新建页面类别/1.png" alt=""></p>
 <p>可以看到<a href="http://hexo.io/hexo-theme-landscape/" target="_blank" rel="external">这个页面</a>有4个页面类别，分别是：Home、Archives、Page和Source。<br><a id="more"></a></p>
 <p>要新建一个页面类别非常简单，例如我想新建一个名为“Github”的页面类别，首先打开终端模拟器，切换至Hexo目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page <span class="string">"Github"</span></div></pre></td></tr></table></figure></p>
 <p>我的Hexo目录是/home/michael/Documents/github_blog，该命令会创建/home/michael/Documents/github_blog/source/Github目录并在该目录下生成一个index.md的示例文件。</p>
@@ -329,7 +329,7 @@
     <summary type="html">
     
       &lt;p&gt;一些Hexo主题的Demo页面有多种页面类别，比如下面这个：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/Hexo新建页面类别/1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/Hexo新建页面类别/1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;可以看到&lt;a href=&quot;http://hexo.io/hexo-theme-landscape/&quot;&gt;这个页面&lt;/a&gt;有4个页面类别，分别是：Home、Archives、Page和Source。&lt;br&gt;
     
     </summary>

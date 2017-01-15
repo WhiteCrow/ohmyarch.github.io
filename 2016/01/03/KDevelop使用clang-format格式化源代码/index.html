@@ -19,7 +19,7 @@
 <meta property="og:description" content="治好你的强迫症">
 <meta property="og:image" content="https://ohmyarch.github.io/images/KDevelop使用clang-foramt格式化源代码/1.png">
 <meta property="og:image" content="https://ohmyarch.github.io/images/KDevelop使用clang-foramt格式化源代码/2.png">
-<meta property="og:updated_time" content="2017-01-15T09:00:33.488Z">
+<meta property="og:updated_time" content="2017-01-15T10:40:08.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KDevelop使用clang-format格式化源代码">
 <meta name="twitter:description" content="治好你的强迫症">
@@ -107,8 +107,8 @@
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">clang-format -version</div></pre></td></tr></table></figure></p>
 <p>如果输出结果显示clang-format命令不可用，就需要先安装相应的软件包。</p>
 <p>对于Arch Linux:<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S clang</div></pre></td></tr></table></figure></p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，选择<em>Source Formatter</em>标签，选择格式化方式为<em>Custom Script Formatter</em>，再点击<em>新建</em>以创建一个新的格式化样式：<br><img src="images/KDevelop使用clang-foramt格式化源代码/1.png" alt=""></p>
-<p>给新建的格式化样式起个名字，比如“clang_format_source”，点击<em>编辑…</em>：<br><img src="images/KDevelop使用clang-foramt格式化源代码/2.png" alt=""></p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>打开KDevelop，点击<em>设置-&gt;配置 KDevelop…</em>，选择<em>Source Formatter</em>标签，选择格式化方式为<em>Custom Script Formatter</em>，再点击<em>新建</em>以创建一个新的格式化样式：<br><img src="/images/KDevelop使用clang-foramt格式化源代码/1.png" alt=""></p>
+<p>给新建的格式化样式起个名字，比如“clang_format_source”，点击<em>编辑…</em>：<br><img src="/images/KDevelop使用clang-foramt格式化源代码/2.png" alt=""></p>
 <p>然后输入合适的clang-format命令，右边的预览框可以实时预览命令的执行结果，很方便。这里我用的命令是：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">clang-format -style=<span class="string">"&#123;BasedOnStyle: llvm, IndentWidth: 4&#125;"</span> -i <span class="variable">$TMPFILE</span></div></pre></td></tr></table></figure></p>
 <p><strong>注意：别忘了对C和C++都设置为使用刚刚创建的格式化样式，因为*.h会被视为C语言头文件。如果只有C++设置为新的格式化样式，那么头文件将不会按照新样式进行格式化。</strong></p>
   

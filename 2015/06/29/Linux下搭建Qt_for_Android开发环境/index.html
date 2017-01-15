@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/9.png">
 <meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/10.jpg">
 <meta property="og:image" content="https://ohmyarch.github.io/images/Linux下搭建Qt_for_Android开发环境/11.jpg">
-<meta property="og:updated_time" content="2017-01-15T09:13:09.222Z">
+<meta property="og:updated_time" content="2017-01-15T10:42:56.193Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux下搭建Qt for Android开发环境">
 <meta name="twitter:description" content="使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。">
@@ -115,30 +115,30 @@
 		
 		<p>使用Qt for Android可以使你开发的Qt5程序运行在Android设备上。除了Qt WebKit，Qt NFC，Qt Serial Port和平台相关的模块（Qt Mac Extras，Qt Windows Extras，and Qt X11 Extras），所有的Qt模块都是被支持的。<br><a id="more"></a></p>
 <h2 id="安装Android-SDK"><a href="#安装Android-SDK" class="headerlink" title="安装Android SDK"></a>安装Android SDK</h2><p>进入<a href="http://developer.android.com/sdk/index.html#Other" target="_blank" rel="external">这个链接</a>，选择Linux版的Android SDK进行下载。</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/1.png" alt=""></p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/1.png" alt=""></p>
 <p>如果下载的网速不够理想，这里有个秒下的方法，就是使用百度云的离线下载工具。百度云离线下载的使用方法这里不作介绍。</p>
 <p>下载完成之后解压，将解压后的文件夹拷贝到一个合适的路径，我这里是/home/michael/Code/android/android-sdk-linux。打开终端模拟器，切换至该路径，然后执行<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> tools</div><div class="line">./android update sdk</div></pre></td></tr></table></figure></p>
 <p>这时会弹出Android SDK Manager的界面，由于这里所有包的下载链接都是来自Google的，自然也是被和谐的，使用全局代理例如VPN可以解决这个问题，我这里来说一下不使用VPN的解决方案。</p>
-<p>点击<em>Tools-&gt;Options</em>，按照下图进行设置然后关闭就可以了：<br><img src="images/Linux下搭建Qt_for_Android开发环境/2.png" alt=""></p>
-<p>下一步是安装需要的包，在所有列出的这些包中，必须安装的有Android SDK Platform-tools和Android SDK Build-tools：<br><img src="images/Linux下搭建Qt_for_Android开发环境/3.png" alt=""></p>
-<p>另外，至少选择一个API level的SDK Platform进行安装，如果后面使用AVD调试Android程序，还需要安装相应的系统镜像。这里我只安装了Android 4.0.3(API15)：<br><img src="images/Linux下搭建Qt_for_Android开发环境/4.png" alt=""></p>
+<p>点击<em>Tools-&gt;Options</em>，按照下图进行设置然后关闭就可以了：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/2.png" alt=""></p>
+<p>下一步是安装需要的包，在所有列出的这些包中，必须安装的有Android SDK Platform-tools和Android SDK Build-tools：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/3.png" alt=""></p>
+<p>另外，至少选择一个API level的SDK Platform进行安装，如果后面使用AVD调试Android程序，还需要安装相应的系统镜像。这里我只安装了Android 4.0.3(API15)：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/4.png" alt=""></p>
 <p>选择完毕后，点击<em>Install packages</em>，耐心等待安装结束。</p>
 <h2 id="安装Android-NDK"><a href="#安装Android-NDK" class="headerlink" title="安装Android NDK"></a>安装Android NDK</h2><p>进入<a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">这个链接</a>，选择Linux版的Android NDK进行下载。</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/5.png" alt=""></p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/5.png" alt=""></p>
 <p>如果下载的网速不够理想，请使用百度云的离线下载工具。</p>
 <p>下载下来的文件是一个自解压程序，我这里的路径是/home/michael/Downloads/android-ndk-r10e-linux-x86_64.bin，切换至该文件所在目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod a+x android-ndk-r10e-linux-x86_64.bin</div><div class="line">./android-ndk-r10e-linux-x86_64.bin</div></pre></td></tr></table></figure></p>
 <p>这时程序内的文件已被解压至名为android-ndk-r10e的文件夹</p>
 <h2 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h2><p>安装OpenJDK（以Arch Linux为例）：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S jdk7-openjdk</div></pre></td></tr></table></figure></p>
 <h2 id="安装Qt-for-Android"><a href="#安装Qt-for-Android" class="headerlink" title="安装Qt for Android"></a>安装Qt for Android</h2><p>进入<a href="https://www.qt.io/zh-hans/download-open-source/#section-2" target="_blank" rel="external">这个链接</a>，选择Linux版的Qt for Android进行下载。</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/6.png" alt=""></p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/6.png" alt=""></p>
 <p>切换至下载目录，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod +x qt-opensource-linux-x64-android-5.4.2.run</div><div class="line">./qt-opensource-linux-x64-android-5.4.2.run</div></pre></td></tr></table></figure></p>
 <p>这时会弹出Qt for Android的安装界面，由于是图形化的安装程序，具体步骤不作介绍。</p>
 <h2 id="配置Qt-Creator"><a href="#配置Qt-Creator" class="headerlink" title="配置Qt Creator"></a>配置Qt Creator</h2><p>首先运行Qt Creator。切换至Qt for Android的安装目录，我这里是/home/michael/Code/android/Qt5.4.2_for_Android，执行：<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> Tools/QtCreator/bin</div><div class="line">./qtcreator.sh</div></pre></td></tr></table></figure></p>
-<p>点击<em>工具-&gt;选项…</em>，选择Android标签，按下图配置，然后点击确定：<br><img src="images/Linux下搭建Qt_for_Android开发环境/7.png" alt=""></p>
-<p>点击<em>工具-&gt;选项-&gt;调试器</em>，去勾选<em>Warn when debugging “Release” builds</em>一项：<br><img src="images/Linux下搭建Qt_for_Android开发环境/12.png" alt=""></p>
-<h2 id="新建测试工程"><a href="#新建测试工程" class="headerlink" title="新建测试工程"></a>新建测试工程</h2><p>在Qt Creator中点击<em>文件-&gt;新建文件或项目…</em>，选择<em>Qt Quick Application</em>模板，在<em>Kit Selection</em>这一步按下图选择，其他都按默认：<br><img src="images/Linux下搭建Qt_for_Android开发环境/8.png" alt=""></p>
-<h2 id="在Android设备上运行"><a href="#在Android设备上运行" class="headerlink" title="在Android设备上运行"></a>在Android设备上运行</h2><p>构建该项目，第一次构建时会下载Gradle，稍慢。然后接入一台开启了USB调试的Android设备，点击运行。这时会弹出对话框让你选择Android设备，可以是真机，也可以是AVD，这里选择我的Android手机，如下图：<br><img src="images/Linux下搭建Qt_for_Android开发环境/9.png" alt=""><br>运行结果：</p>
-<p><img src="images/Linux下搭建Qt_for_Android开发环境/10.jpg" alt=""><br><img src="images/Linux下搭建Qt_for_Android开发环境/11.jpg" alt=""></p>
+<p>点击<em>工具-&gt;选项…</em>，选择Android标签，按下图配置，然后点击确定：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/7.png" alt=""></p>
+<p>点击<em>工具-&gt;选项-&gt;调试器</em>，去勾选<em>Warn when debugging “Release” builds</em>一项：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/12.png" alt=""></p>
+<h2 id="新建测试工程"><a href="#新建测试工程" class="headerlink" title="新建测试工程"></a>新建测试工程</h2><p>在Qt Creator中点击<em>文件-&gt;新建文件或项目…</em>，选择<em>Qt Quick Application</em>模板，在<em>Kit Selection</em>这一步按下图选择，其他都按默认：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/8.png" alt=""></p>
+<h2 id="在Android设备上运行"><a href="#在Android设备上运行" class="headerlink" title="在Android设备上运行"></a>在Android设备上运行</h2><p>构建该项目，第一次构建时会下载Gradle，稍慢。然后接入一台开启了USB调试的Android设备，点击运行。这时会弹出对话框让你选择Android设备，可以是真机，也可以是AVD，这里选择我的Android手机，如下图：<br><img src="/images/Linux下搭建Qt_for_Android开发环境/9.png" alt=""><br>运行结果：</p>
+<p><img src="/images/Linux下搭建Qt_for_Android开发环境/10.jpg" alt=""><br><img src="/images/Linux下搭建Qt_for_Android开发环境/11.jpg" alt=""></p>
 <p>参考：<br><a href="http://doc.qt.io/qt-5/androidgs.html" target="_blank" rel="external">http://doc.qt.io/qt-5/androidgs.html</a><br><a href="http://www.kdab.com/qt-on-android-episode-2/" target="_blank" rel="external">http://www.kdab.com/qt-on-android-episode-2/</a><br><a href="http://developer.android.com/ndk/downloads/index.html" target="_blank" rel="external">http://developer.android.com/ndk/downloads/index.html</a></p>
   
 	</div>
