@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ohmyarch.github.io/"/>
-  <updated>2017-02-05T14:45:54.220Z</updated>
+  <updated>2017-02-09T17:10:39.176Z</updated>
   <id>https://ohmyarch.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://ohmyarch.github.io/2017/01/15/Linux%E4%B8%8B%E7%BB%88%E6%9E%81%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/"/>
     <id>https://ohmyarch.github.io/2017/01/15/Linux下终极字体配置方案/</id>
     <published>2017-01-15T11:05:12.000Z</published>
-    <updated>2017-02-05T14:45:54.220Z</updated>
+    <updated>2017-02-09T17:10:39.176Z</updated>
     
     <content type="html"><![CDATA[<p>一直以来，字体渲染问题困扰着很多Linux新手甚至老手。我经常在各种群看到各种字体相关的问题，还有人搞什么<a href="https://wiki.archlinux.org/index.php/Infinality" target="_blank" rel="external">Infinality</a>。不要搞Infinality，不要搞Infinality，不要搞Infinality，重要的事情说三遍。是时候结束这个尴尬的局面了。Linux用户就只能面对糟糕的字体渲染吗？不！<strong>只要配置得当，Linux下的字体显示效果将是桌面系统(Linux/macOS/Windows)中最好的</strong>。<br><a id="more"></a></p>
 <p>首先说明一下我的环境:</p>
@@ -44,10 +44,19 @@
 <h2 id="使GTK程序能够显示彩色Emoji"><a href="#使GTK程序能够显示彩色Emoji" class="headerlink" title="使GTK程序能够显示彩色Emoji"></a>使GTK程序能够显示彩色Emoji</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yaourt -S cairo-coloredemoji</div></pre></td></tr></table></figure>
 <p>mesa-libgl是该包的编译期依赖，如果你使用的是其他libgl实现(nvidia-libgl/nvidia-340xx-libgl/nvidia-304xx-libgl)，需要在编译前修改PKGBUILD中的makedepends。我使用的是nvidia-libgl，所以将<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">makedepends=(<span class="string">'mesa-libgl'</span> <span class="string">'librsvg'</span> <span class="string">'gtk2'</span> <span class="string">'poppler-glib'</span> <span class="string">'libspectre'</span> <span class="string">'gtk-doc'</span> <span class="string">'valgrind'</span> <span class="string">'git'</span>)</div></pre></td></tr></table></figure></p>
 <p>修改为<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">makedepends=(<span class="string">'nvidia-libgl'</span> <span class="string">'librsvg'</span> <span class="string">'gtk2'</span> <span class="string">'poppler-glib'</span> <span class="string">'libspectre'</span> <span class="string">'gtk-doc'</span> <span class="string">'valgrind'</span> <span class="string">'git'</span>)</div></pre></td></tr></table></figure></p>
-<h2 id="注销，重新登入"><a href="#注销，重新登入" class="headerlink" title="注销，重新登入"></a>注销，重新登入</h2><h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><h3 id="Konsole"><a href="#Konsole" class="headerlink" title="Konsole"></a>Konsole</h3><p><img src="/images/Linux下终极字体配置方案/6.png" alt=""><br><img src="/images/Linux下终极字体配置方案/7.png" alt=""><br><img src="/images/Linux下终极字体配置方案/8.png" alt=""></p>
-<h3 id="KDevelop-Kate"><a href="#KDevelop-Kate" class="headerlink" title="KDevelop/Kate"></a>KDevelop/Kate</h3><p><img src="/images/Linux下终极字体配置方案/9.png" alt=""><br><img src="/images/Linux下终极字体配置方案/10.png" alt=""></p>
-<h3 id="gedit"><a href="#gedit" class="headerlink" title="gedit"></a>gedit</h3><p><img src="/images/Linux下终极字体配置方案/11.png" alt=""></p>
-<p><strong>注：由于Qt的一个Bug，中英文混在一块的时候可能会上下错位，本文用到的字体配置想办法避开了这一问题</strong><br><img src="/images/Linux下终极字体配置方案/12.png" alt=""></p>
+<h2 id="强制Firefox使用Noto-Color-Emoji"><a href="#强制Firefox使用Noto-Color-Emoji" class="headerlink" title="强制Firefox使用Noto Color Emoji"></a>强制Firefox使用Noto Color Emoji</h2><p>本想单独写篇Firefox字体问题的blog，又考虑到方案就包含在本篇使用的字体配置文件里面，还是顺便说了吧。Firefox唯一的问题就是其Linux版本从50.0开始使用内置的<a href="https://emojione.com" target="_blank" rel="external">Emoji One</a>。内置Emoji字体当然是有好处的，但也带来了一些问题：</p>
+<ul>
+<li>很多Emoji不能显示为彩色</li>
+<li>Emoji字体不按Fontconfig的回滚顺序进行匹配，给想使用其他Emoji字体的用户带来了麻烦<br>为了使更多Emoji显示为彩色以及与其他应用风格统一，针对Firefox添加了如下配置：<figure class="highlight xml"><figcaption><span>fonts.conf</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">match</span> <span class="attr">target</span>=<span class="string">"pattern"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">test</span> <span class="attr">name</span>=<span class="string">"prgname"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">string</span>&gt;</span>firefox<span class="tag">&lt;/<span class="name">string</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">test</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">edit</span> <span class="attr">name</span>=<span class="string">"family"</span> <span class="attr">mode</span>=<span class="string">"prepend"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">string</span>&gt;</span>Noto Color Emoji<span class="tag">&lt;/<span class="name">string</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">edit</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">match</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>经测试，Firefox、Firefox Developer Edition与Firefox Nightly都是生效的，如果你使用的是后两者之一而配置没有生效，升级至最新即可解决问题。<br><strong>已知Bug(Firefox Developer Edition/Firefox Nightly)：只要有一个标签页的标题中含有Emoji，就会撑高整个标签栏，关闭所有这样的标签页后标签栏高度才能恢复正常。</strong><br><img src="/images/Linux下终极字体配置方案/6.png" alt=""><br><img src="/images/Linux下终极字体配置方案/7.png" alt=""></p>
+<h2 id="注销，重新登入"><a href="#注销，重新登入" class="headerlink" title="注销，重新登入"></a>注销，重新登入</h2><h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><h3 id="Konsole"><a href="#Konsole" class="headerlink" title="Konsole"></a>Konsole</h3><p><img src="/images/Linux下终极字体配置方案/8.png" alt=""><br><img src="/images/Linux下终极字体配置方案/9.png" alt=""><br><img src="/images/Linux下终极字体配置方案/10.png" alt=""></p>
+<h3 id="KDevelop-Kate"><a href="#KDevelop-Kate" class="headerlink" title="KDevelop/Kate"></a>KDevelop/Kate</h3><p><img src="/images/Linux下终极字体配置方案/11.png" alt=""><br><img src="/images/Linux下终极字体配置方案/12.png" alt=""></p>
+<h3 id="gedit"><a href="#gedit" class="headerlink" title="gedit"></a>gedit</h3><p><img src="/images/Linux下终极字体配置方案/13.png" alt=""></p>
+<h3 id="Firefox"><a href="#Firefox" class="headerlink" title="Firefox"></a>Firefox</h3><p><img src="/images/Linux下终极字体配置方案/14.png" alt=""></p>
+<p><br></p>
+<p><strong>注：由于Qt的一个Bug，中英文混在一块的时候可能会上下错位，本文用到的字体配置设法避开了这一问题。</strong><br><img src="/images/Linux下终极字体配置方案/15.png" alt=""></p>
 <p>如果你觉得按本文配置后效果不错，请给我的<a href="https://github.com/ohmyarch/fontconfig-zh-cn" target="_blank" rel="external">字体配置仓库</a>点个⭐️，谢谢。后续我会写一些应用程序相关的字体配置文章，敬请期待😉。</p>
 ]]></content>
     
